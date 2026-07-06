@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nền Tảng Livestream Idol</title>
+
+    <!-- Đổi sang CDN unpkg/jsdelivr có tốc độ tải luồng cực nhanh và ổn định -->
+    <script src="https://cdn.jsdelivr.net/npm/mpegts.js@1.7.3/dist/mpegts.min.js"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #0b0c10; color: #fff; padding: 20px; }
+        h1 { text-align: center; margin-bottom: 20px; color: #66fcf1; text-transform: uppercase; letter-spacing: 2px; }
+        
+        /* Danh sách Idol dạng Grid */
+        .idol-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .idol-card { background: #1f2833; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5); cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; }
+        .idol-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(102, 252, 241, 0.3); }
+        
+        .avatar-container { width: 100%; aspect-ratio: 3/4; overflow: hidden; background-color: #151a21; position: relative; }
+        .avatar-img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .live-badge { position: absolute; top: 10px; left: 10px; background: #ff0055; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; text-transform: uppercase; display: flex; align-items: center; gap: 5px; }
+        .live-badge::before { content: ''; display: inline-block; width: 6px; height: 6px; background: #fff; border-radius: 50%; animation: blink 1s infinite; }
+        .views-badge { position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 4px; font-size: 11px; }
+
+        .idol-info { padding: 15px; }
+        .nickname { font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .signature { font-size: 12px; color: #c5a880; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 10px; }
+        .game-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+        .game-tag { background: #45f3ff1a; color: #45f3ff; border: 1px solid #45f3ff33; padding: 2px 6px; border-radius: 4px; font-size: 10px; }
+
+        /* Trình phát livestream màn hình dọc */
+        .player-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 1000; justify-content: center; align-items: center; }
+        .player-container { width: 95%; max-width: 420px; background: #000; border-radius: 12px; overflow: hidden; position: relative; border: 1px solid #333; }
+        video { width: 100%; display: block; background: #000; aspect-ratio: 9/16; } 
+        .close-btn { position: absolute; top: 15px; right: 20px; font-size: 35px; color: #fff; cursor: pointer; z-index: 1001; text-shadow: 0 2px 4px #000; }
+        .stream-loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #45f3ff; font-size: 14px; text-align: center; width: 85%; pointer-events: none; line-height: 1.6; }
+
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+
+    <h1>✨ Đang Livestream ✨</h1>
+
+    <div class="idol-grid" id="idols-container">
+        <p style="text-align: center; grid-column: 1/-1; color: #888;">Đang tự động đồng bộ danh sách Idol...</p>
+    </div>
+
+    <div class="player-modal" id="player-modal">
+        <span class="close-btn" onclick="closePlayer()">&times;</span>
+        <div class="player-container">
+            <div class="stream-loading" id="stream-status">Đang nạp luồng phát...</div>
+            <video id="live-video" controls autoplay playsinline></video>
+        </div>
+    </div>
+
+    <script>
+        let tgsPlayerInstance = null;
+
+        async function fetchIdols() {
+            const container = document.getElementById('idols-container');
+            container.innerHTML = '<p style="text-align: center; grid-column: 1/-1;">Đang tải danh sách Idol từ hệ thống...</p>';
+
+            try {
+                const response = await fetch('/api/idols', {
+                    method: 'GET'
+                });
+                const result = await response.json();
+                if (result.code === 0 && result.data) {
+                    renderIdols(result.data);
+                } else {
+                    container.innerHTML = `<p style="color: #ff3366; text-align: center; grid-column: 1/-1;">Lỗi lấy danh sách công khai: ${result.msg || 'Token cấu hình đã hết hạn'}</p>`;
+                }
+            } catch (error) {
+                container.innerHTML = `<p style="color: #ff3366; text-align: center; grid-column: 1/-1;">Lỗi kết nối Backend server Flask.</p>`;
+            }
+        }
+
+        function renderIdols(idols) {
+            const container = document.getElementById('idols-container');
+            container.innerHTML = ''; 
+
+            idols.forEach(idol => {
+                let gameTagsHTML = idol.liveStartLottery ? idol.liveStartLottery.map(g => `<span class="game-tag">${g.lotteryName}</span>`).join('') : '';
+                const card = document.createElement('div');
+                card.className = 'idol-card';
+                card.onclick = () => playIdolStream(idol.anchorId, idol.liveId);
+
+                card.innerHTML = `
+                    <div class="avatar-container">
+                        <span class="live-badge">Live</span>
+                        <span class="views-badge">👁️ ${idol.rq || 0}</span>
+                        <img class="avatar-img" src="${idol.avatar}" alt="${idol.nickname}" onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'">
+                    </div>
+                    <div class="idol-info">
+                        <div class="nickname">${idol.nickname}</div>
+                        <div class="signature">${idol.signature || 'Chưa có chữ ký...'}</div>
+                        <div class="game-tags">${gameTagsHTML}</div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // TỰ ĐỘNG KHỞI TẠO LUỒNG PHÁT VÀ ĐỔI ĐUÔI SANG .FLV ĐỘNG NGAY KHI CLICK
+        async function playIdolStream(anchorId, liveId) {
+            const modal = document.getElementById('player-modal');
+            const statusText = document.getElementById('stream-status');
+            const videoElement = document.getElementById('live-video');
+            
+            modal.style.display = 'flex';
+            statusText.style.display = 'block';
+            statusText.innerText = "Đang kết nối API để tạo token luồng stream mới nhất...";
+
+            try {
+                const response = await fetch('/api/stream', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ anchorId, liveId })
+                });
+                const result = await response.json();
+                
+                if (result.code !== 0 || !result.data || !result.data.pullStreamUrl) {
+                    statusText.innerHTML = `<span style="color:#ff3366;">Không thể lấy link luồng.<br>Lý do: Cụm X-Sign/Token cấu hình của bạn đã hết hạn, cần lấy cụm mới từ F12 web gốc dán vào panel cấu hình.</span>`;
+                    return;
+                }
+
+                const rtmpUrl = result.data.pullStreamUrl;
+                console.log("Link RTMP tươi nhận về từ API:", rtmpUrl);
+
+                // THỰC HIỆN ĐỔI CHUỖI ĐỘNG CHUẨN KỸ THUẬT:
+                // 1. Thay rtmp:// thành http://
+                let flvUrl = rtmpUrl.replace("rtmp://", "http://");
+                // 2. Chèn đuôi .flv vào trước dấu chấm hỏi tham số bảo mật
+                flvUrl = flvUrl.replace("?", ".flv?");
+                
+                console.log("Link HTTP-FLV tươi cấu hình cho trình duyệt:", flvUrl);
+                statusText.innerText = "Đang bắt luồng giải mã video từ CDN máy chủ...";
+
+                // Khởi chạy thư viện mpegts để nạp video lên thẻ HTML5 trực tiếp
+                if (mpegts.isSupported()) {
+                    closePlayerEngine(); // Reset trình phát trước đó nếu đang bật
+                    
+                    tgsPlayerInstance = mpegts.createPlayer({
+                        type: 'flv',
+                        isLive: true,
+                        url: flvUrl
+                    }, {
+                        enableStashBuffer: false,        // Tắt bộ đệm lưu trữ tăng tốc thời gian phát
+                        liveBufferLatencyChasing: true  // Ép trình duyệt đuổi kịp frame live thực tế
+                    });
+                    
+                    tgsPlayerInstance.attachMediaElement(videoElement);
+                    tgsPlayerInstance.load();
+                    
+                    tgsPlayerInstance.on(mpegts.Events.ERROR, (type, detail, info) => {
+                        console.error("Lỗi mpegts:", type, detail, info);
+                        statusText.innerHTML = `<span style="color:#ff3366;">Luồng stream bị lỗi kết nối.<br>Vui lòng đảm bảo đã BẬT Extension "Allow CORS" trên trình duyệt Chrome.</span>`;
+                    });
+
+                    tgsPlayerInstance.play().then(() => {
+                        statusText.style.display = 'none'; // Thành công, ẩn màn hình loading
+                    }).catch(err => {
+                        statusText.innerText = "Bấm vào khung phát để kích hoạt âm thanh Livestream.";
+                    });
+                } else {
+                    statusText.innerText = "Trình duyệt này không hỗ trợ giải mã luồng phát FLV.";
+                }
+
+            } catch (error) {
+                statusText.innerText = "Lỗi kết nối đồng bộ Backend Flask.";
+                console.error(error);
+            }
+        }
+
+        function closePlayerEngine() {
+    if (tgsPlayerInstance) {
+        tgsPlayerInstance.unload();
+        tgsPlayerInstance.detachMediaElement(); // Sửa thành hàm này
+        tgsPlayerInstance.destroy();
+        tgsPlayerInstance = null;
+    }
+}
+
+        function closePlayer() {
+            const videoElement = document.getElementById('live-video');
+            videoElement.pause();
+            closePlayerEngine();
+            document.getElementById('player-modal').style.display = 'none';
+        }
+
+        // Tự động tải danh sách ngay khi mở trang.
+        window.addEventListener('DOMContentLoaded', fetchIdols);
+    </script>
+</body>
+</html>
