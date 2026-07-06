@@ -106,74 +106,79 @@
 
         // TỰ ĐỘNG KHỞI TẠO LUỒNG PHÁT VÀ ĐỔI ĐUÔI SANG .FLV ĐỘNG NGAY KHI CLICK
         async function playIdolStream(anchorId, liveId) {
-            const modal = document.getElementById('player-modal');
-            const statusText = document.getElementById('stream-status');
-            const videoElement = document.getElementById('live-video');
-            
-            modal.style.display = 'flex';
-            statusText.style.display = 'block';
-            statusText.innerText = "Đang kết nối API để tạo token luồng stream mới nhất...";
+    const modal = document.getElementById('player-modal');
+    const statusText = document.getElementById('stream-status');
+    const videoElement = document.getElementById('live-video');
+    
+    modal.style.display = 'flex';
+    statusText.style.display = 'block';
+    statusText.innerText = "Đang kết nối API để tạo token luồng stream mới nhất...";
 
-            try {
-                const response = await fetch('/api/stream', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ anchorId, liveId })
-                });
-                const result = await response.json();
-                
-                if (result.code !== 0 || !result.data || !result.data.pullStreamUrl) {
-                    statusText.innerHTML = `<span style="color:#ff3366;">Không thể lấy link luồng.<br>Lý do: Cụm X-Sign/Token cấu hình của bạn đã hết hạn, cần lấy cụm mới từ F12 web gốc dán vào panel cấu hình.</span>`;
-                    return;
-                }
-
-                const rtmpUrl = result.data.pullStreamUrl;
-                console.log("Link RTMP tươi nhận về từ API:", rtmpUrl);
-
-                // THỰC HIỆN ĐỔI CHUỖI ĐỘNG CHUẨN KỸ THUẬT:
-                // 1. Thay rtmp:// thành http://
-                let flvUrl = rtmpUrl.replace("rtmp://", "http://");
-                // 2. Chèn đuôi .flv vào trước dấu chấm hỏi tham số bảo mật
-                flvUrl = flvUrl.replace("?", ".flv?");
-                
-                console.log("Link HTTP-FLV tươi cấu hình cho trình duyệt:", flvUrl);
-                statusText.innerText = "Đang bắt luồng giải mã video từ CDN máy chủ...";
-
-                // Khởi chạy thư viện mpegts để nạp video lên thẻ HTML5 trực tiếp
-                if (mpegts.isSupported()) {
-                    closePlayerEngine(); // Reset trình phát trước đó nếu đang bật
-                    
-                    tgsPlayerInstance = mpegts.createPlayer({
-                        type: 'flv',
-                        isLive: true,
-                        url: flvUrl
-                    }, {
-                        enableStashBuffer: false,        // Tắt bộ đệm lưu trữ tăng tốc thời gian phát
-                        liveBufferLatencyChasing: true  // Ép trình duyệt đuổi kịp frame live thực tế
-                    });
-                    
-                    tgsPlayerInstance.attachMediaElement(videoElement);
-                    tgsPlayerInstance.load();
-                    
-                    tgsPlayerInstance.on(mpegts.Events.ERROR, (type, detail, info) => {
-                        console.error("Lỗi mpegts:", type, detail, info);
-                        statusText.innerHTML = `<span style="color:#ff3366;">Luồng stream bị lỗi kết nối.<br>Vui lòng đảm bảo đã BẬT Extension "Allow CORS" trên trình duyệt Chrome.</span>`;
-                    });
-
-                    tgsPlayerInstance.play().then(() => {
-                        statusText.style.display = 'none'; // Thành công, ẩn màn hình loading
-                    }).catch(err => {
-                        statusText.innerText = "Bấm vào khung phát để kích hoạt âm thanh Livestream.";
-                    });
-                } else {
-                    statusText.innerText = "Trình duyệt này không hỗ trợ giải mã luồng phát FLV.";
-                }
-
-            } catch (error) {
-                statusText.innerText = "Lỗi kết nối đồng bộ Backend Flask.";
-                console.error(error);
-            }
+    try {
+        const response = await fetch('/api/stream', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ anchorId, liveId })
+        });
+        const result = await response.json();
+        
+        if (result.code !== 0 || !result.data || !result.data.pullStreamUrl) {
+            statusText.innerHTML = `<span style="color:#ff3366;">Không thể lấy link luồng.<br>Lý do: Cụm X-Sign/Token cấu hình của bạn đã hết hạn.</span>`;
+            return;
         }
+
+        const rtmpUrl = result.data.pullStreamUrl;
+        console.log("Link RTMP tươi nhận về từ API:", rtmpUrl);
+
+        // 1. Tạo link HTTP-FLV gốc (chạy cổng http thường)
+        let originalFlvUrl = rtmpUrl.replace("rtmp://", "http://");
+        originalFlvUrl = originalFlvUrl.replace("?", ".flv?");
+        
+        // 2. CHUYỂN HƯỚNG: Đút link gốc vào cổng Proxy an toàn của Flask
+        let safeProxyUrl = `/api/video_proxy?url=${encodeURIComponent(originalFlvUrl)}`;
+        
+        console.log("Luồng video an toàn chạy qua mã hóa Render:", safeProxyUrl);
+        statusText.innerText = "Đang tải dữ liệu luồng phát từ Server Proxy...";
+
+        if (typeof mpegts === 'undefined') {
+            statusText.innerHTML = `<span style="color:#ff3366;">Lỗi: Chưa tải được thư viện mpegts.js</span>`;
+            return;
+        }
+
+        if (mpegts.isSupported()) {
+            closePlayerEngine(); 
+            
+            tgsPlayerInstance = mpegts.createPlayer({
+                type: 'flv',
+                isLive: true,
+                url: safeProxyUrl // Sử dụng link proxy an toàn
+            }, {
+                enableStashBuffer: false,
+                liveBufferLatencyChasing: true
+            });
+            
+            tgsPlayerInstance.attachMediaElement(videoElement);
+            tgsPlayerInstance.load();
+            
+            tgsPlayerInstance.on(mpegts.Events.ERROR, (type, detail, info) => {
+                console.error("Lỗi mpegts:", type, detail, info);
+                statusText.innerHTML = `<span style="color:#ff3366;">Luồng stream gặp sự cố giải mã hoặc server proxy quá tải.</span>`;
+            });
+
+            tgsPlayerInstance.play().then(() => {
+                statusText.style.display = 'none'; 
+            }).catch(err => {
+                statusText.innerText = "Bấm vào khung phát để kích hoạt âm thanh Livestream.";
+            });
+        } else {
+            statusText.innerText = "Trình duyệt này không hỗ trợ giải mã luồng phát FLV.";
+        }
+
+    } catch (error) {
+        statusText.innerText = "Lỗi kết nối đồng bộ Backend Flask.";
+        console.error(error);
+    }
+}
 
         function closePlayerEngine() {
     if (tgsPlayerInstance) {
