@@ -1,0 +1,810 @@
+curl ^"https://71234.tv/static/svga/gift.1a35eb39.svga^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -b ^"_ga=GA1.1.2143300487.1783327033; _ga_LV9KEL696C=GS2.1.s1783327033^$o1^$g1^$t1783327719^$j22^$l0^$h0^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/room/1973361965591597058?bgUrl=https://img.y3cdn.com/20260508/9ffd7c8de8f34cf2a3569a9b7a74d553.jpg^&gameId=180204113800032^&gameName=1mFast3^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-origin^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://71234.tv/static/svga/tip.6aaf1a6b.svga^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -b ^"_ga=GA1.1.2143300487.1783327033; _ga_LV9KEL696C=GS2.1.s1783327033^$o1^$g1^$t1783327719^$j22^$l0^$h0^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/room/1973361965591597058?bgUrl=https://img.y3cdn.com/20260508/9ffd7c8de8f34cf2a3569a9b7a74d553.jpg^&gameId=180204113800032^&gameName=1mFast3^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-origin^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/grcen/h5/members/autoTransfer/get^" ^
+  -X ^"POST^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"area: VN^" ^
+  -H ^"authorization: Bearer eyJraWQiOiJ1c2VyLW9hdXRoMi1qa3MiLCJhbGciOiJSUzI1NiJ9.eyJhZ2VudElkIjoyMDU4ODE2MzEwOTg4MjkyMDk3LCJtZXJjaGFudElkIjo1MTEsInVzZXJfbmFtZSI6IjJ2NXNuOXpzZGR2bCIsInNjb3BlIjpbImFsbCJdLCJtZW1iZXJUeXBlIjoxLCJleHAiOjE3ODQ2MjMwOTMsImp0aSI6ImUzNDFmNDE0LWI3YTAtNGMyNi1hMmUwLWM1ZDVjYTRhNDZlMyIsImNsaWVudF9pZCI6IndlYi1wbGF5ZXIiLCJhdXRob3JpdGllcyI6WyJST0xFX1dFQl9QTEFZRVIiXSwidXNlcm5hbWUiOiIydjVzbjl6c2RkdmwiLCJtZW1iZXJJZCI6IjIwNzQwNTAyNzI1NTE5MzYwMDIifQ.lFBZOKnY6PxtYp2BgVF4bGSaKOK14jWtvnSUU5OA1HIi_dVSwTLHS6Nte2Yu8K4RWhx830DceDaaT963dBoQWmSS3p4aQbZWPnZSKyOqLk2Cx8Zn-FdW46myglWZqpRTRRq0AoyhhmoZlnoFJn1A__X2JYY3T02VZqslOGm49qZmxVQARtCROr7ySk2JOrnba3I0LROV7JVcdteSwKBLS7lx08GRBAHbqPJJ-3NRNJMZhPctzbDo_OGcmNhR5lZPYqdfYVnM4AslcL3Q4liNzQ0gz0QShZ8JvAYJtOK1Z7TfuR3fgLsYYeCJ5kuoHZaxpn4cqtIzjNuxlzj9W3VlxA^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-length: 0^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"device: abb7c99e-3b6e-4707-a31b-0673e2306542^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"locale-language: VIT^" ^
+  -H ^"merchantid: 511^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"sign: 11f569ed792da4e0cff8a393534a5bf2^" ^
+  -H ^"system-version: 1.5.1^" ^
+  -H ^"time-zone: GMT+07:00^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/hdcen/h5/activity-template/getFirstRechargeGiftPackage^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"area: VN^" ^
+  -H ^"authorization: Bearer eyJraWQiOiJ1c2VyLW9hdXRoMi1qa3MiLCJhbGciOiJSUzI1NiJ9.eyJhZ2VudElkIjoyMDU4ODE2MzEwOTg4MjkyMDk3LCJtZXJjaGFudElkIjo1MTEsInVzZXJfbmFtZSI6IjJ2NXNuOXpzZGR2bCIsInNjb3BlIjpbImFsbCJdLCJtZW1iZXJUeXBlIjoxLCJleHAiOjE3ODQ2MjMwOTMsImp0aSI6ImUzNDFmNDE0LWI3YTAtNGMyNi1hMmUwLWM1ZDVjYTRhNDZlMyIsImNsaWVudF9pZCI6IndlYi1wbGF5ZXIiLCJhdXRob3JpdGllcyI6WyJST0xFX1dFQl9QTEFZRVIiXSwidXNlcm5hbWUiOiIydjVzbjl6c2RkdmwiLCJtZW1iZXJJZCI6IjIwNzQwNTAyNzI1NTE5MzYwMDIifQ.lFBZOKnY6PxtYp2BgVF4bGSaKOK14jWtvnSUU5OA1HIi_dVSwTLHS6Nte2Yu8K4RWhx830DceDaaT963dBoQWmSS3p4aQbZWPnZSKyOqLk2Cx8Zn-FdW46myglWZqpRTRRq0AoyhhmoZlnoFJn1A__X2JYY3T02VZqslOGm49qZmxVQARtCROr7ySk2JOrnba3I0LROV7JVcdteSwKBLS7lx08GRBAHbqPJJ-3NRNJMZhPctzbDo_OGcmNhR5lZPYqdfYVnM4AslcL3Q4liNzQ0gz0QShZ8JvAYJtOK1Z7TfuR3fgLsYYeCJ5kuoHZaxpn4cqtIzjNuxlzj9W3VlxA^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-type: application/json^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"device: abb7c99e-3b6e-4707-a31b-0673e2306542^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"locale-language: VIT^" ^
+  -H ^"merchantid: 511^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"sign: 11f569ed792da4e0cff8a393534a5bf2^" ^
+  -H ^"system-version: 1.5.1^" ^
+  -H ^"time-zone: GMT+07:00^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" ^
+  --data-raw ^"^{^\^"currency^\^":^\^"VND^\^"^}^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/limit-promotion/get^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"area: VN^" ^
+  -H ^"authorization: Bearer eyJraWQiOiJ1c2VyLW9hdXRoMi1qa3MiLCJhbGciOiJSUzI1NiJ9.eyJhZ2VudElkIjoyMDU4ODE2MzEwOTg4MjkyMDk3LCJtZXJjaGFudElkIjo1MTEsInVzZXJfbmFtZSI6IjJ2NXNuOXpzZGR2bCIsInNjb3BlIjpbImFsbCJdLCJtZW1iZXJUeXBlIjoxLCJleHAiOjE3ODQ2MjMwOTMsImp0aSI6ImUzNDFmNDE0LWI3YTAtNGMyNi1hMmUwLWM1ZDVjYTRhNDZlMyIsImNsaWVudF9pZCI6IndlYi1wbGF5ZXIiLCJhdXRob3JpdGllcyI6WyJST0xFX1dFQl9QTEFZRVIiXSwidXNlcm5hbWUiOiIydjVzbjl6c2RkdmwiLCJtZW1iZXJJZCI6IjIwNzQwNTAyNzI1NTE5MzYwMDIifQ.lFBZOKnY6PxtYp2BgVF4bGSaKOK14jWtvnSUU5OA1HIi_dVSwTLHS6Nte2Yu8K4RWhx830DceDaaT963dBoQWmSS3p4aQbZWPnZSKyOqLk2Cx8Zn-FdW46myglWZqpRTRRq0AoyhhmoZlnoFJn1A__X2JYY3T02VZqslOGm49qZmxVQARtCROr7ySk2JOrnba3I0LROV7JVcdteSwKBLS7lx08GRBAHbqPJJ-3NRNJMZhPctzbDo_OGcmNhR5lZPYqdfYVnM4AslcL3Q4liNzQ0gz0QShZ8JvAYJtOK1Z7TfuR3fgLsYYeCJ5kuoHZaxpn4cqtIzjNuxlzj9W3VlxA^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-type: application/json^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"device: abb7c99e-3b6e-4707-a31b-0673e2306542^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"locale-language: VIT^" ^
+  -H ^"merchantid: 511^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"sign: 11f569ed792da4e0cff8a393534a5bf2^" ^
+  -H ^"system-version: 1.5.1^" ^
+  -H ^"time-zone: GMT+07:00^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" ^
+  --data-raw ^"^{^\^"currency^\^":^\^"VND^\^"^}^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/h5/chip/app/get.json?merchantId=511^&pricingMethod=VND^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" &
+curl ^"https://ht.fnccdn.com/xnntc/ip-detail/listener^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"area: VN^" ^
+  -H ^"authorization: Bearer eyJraWQiOiJ1c2VyLW9hdXRoMi1qa3MiLCJhbGciOiJSUzI1NiJ9.eyJhZ2VudElkIjoyMDU4ODE2MzEwOTg4MjkyMDk3LCJtZXJjaGFudElkIjo1MTEsInVzZXJfbmFtZSI6IjJ2NXNuOXpzZGR2bCIsInNjb3BlIjpbImFsbCJdLCJtZW1iZXJUeXBlIjoxLCJleHAiOjE3ODQ2MjMwOTMsImp0aSI6ImUzNDFmNDE0LWI3YTAtNGMyNi1hMmUwLWM1ZDVjYTRhNDZlMyIsImNsaWVudF9pZCI6IndlYi1wbGF5ZXIiLCJhdXRob3JpdGllcyI6WyJST0xFX1dFQl9QTEFZRVIiXSwidXNlcm5hbWUiOiIydjVzbjl6c2RkdmwiLCJtZW1iZXJJZCI6IjIwNzQwNTAyNzI1NTE5MzYwMDIifQ.lFBZOKnY6PxtYp2BgVF4bGSaKOK14jWtvnSUU5OA1HIi_dVSwTLHS6Nte2Yu8K4RWhx830DceDaaT963dBoQWmSS3p4aQbZWPnZSKyOqLk2Cx8Zn-FdW46myglWZqpRTRRq0AoyhhmoZlnoFJn1A__X2JYY3T02VZqslOGm49qZmxVQARtCROr7ySk2JOrnba3I0LROV7JVcdteSwKBLS7lx08GRBAHbqPJJ-3NRNJMZhPctzbDo_OGcmNhR5lZPYqdfYVnM4AslcL3Q4liNzQ0gz0QShZ8JvAYJtOK1Z7TfuR3fgLsYYeCJ5kuoHZaxpn4cqtIzjNuxlzj9W3VlxA^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-type: application/json^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"device: abb7c99e-3b6e-4707-a31b-0673e2306542^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"locale-language: VIT^" ^
+  -H ^"merchantid: 511^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"sign: d7ae34f716825d4a3c8620f451d80aac^" ^
+  -H ^"system-version: 1.5.1^" ^
+  -H ^"time-zone: GMT+07:00^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  --data-raw ^"^{^\^"pfi^\^":^\^"tCNIPapJFK9DE3WEB/CzZw==^\^",^\^"ui^\^":^\^"gGX4tGf9Gp+S+EQAEvlPGvrs09CTLqcDJ+xFnAOMbO0=^\^",^\^"pgi^\^":^\^"BFBmDom2ENuDigxUOQC6BA==^\^",^\^"inviteCode^\^":^\^"xmND5ZIRtti87hlrsTK2Wg==^\^",^\^"sign^\^":^\^"7bc5777e7d221a2cf949ebd5476e8e01^\^"^}^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/zbliv/h5/v3/public/live/room-info^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"area: VN^" ^
+  -H ^"authorization: Bearer eyJraWQiOiJ1c2VyLW9hdXRoMi1qa3MiLCJhbGciOiJSUzI1NiJ9.eyJhZ2VudElkIjoyMDU4ODE2MzEwOTg4MjkyMDk3LCJtZXJjaGFudElkIjo1MTEsInVzZXJfbmFtZSI6IjJ2NXNuOXpzZGR2bCIsInNjb3BlIjpbImFsbCJdLCJtZW1iZXJUeXBlIjoxLCJleHAiOjE3ODQ2MjMwOTMsImp0aSI6ImUzNDFmNDE0LWI3YTAtNGMyNi1hMmUwLWM1ZDVjYTRhNDZlMyIsImNsaWVudF9pZCI6IndlYi1wbGF5ZXIiLCJhdXRob3JpdGllcyI6WyJST0xFX1dFQl9QTEFZRVIiXSwidXNlcm5hbWUiOiIydjVzbjl6c2RkdmwiLCJtZW1iZXJJZCI6IjIwNzQwNTAyNzI1NTE5MzYwMDIifQ.lFBZOKnY6PxtYp2BgVF4bGSaKOK14jWtvnSUU5OA1HIi_dVSwTLHS6Nte2Yu8K4RWhx830DceDaaT963dBoQWmSS3p4aQbZWPnZSKyOqLk2Cx8Zn-FdW46myglWZqpRTRRq0AoyhhmoZlnoFJn1A__X2JYY3T02VZqslOGm49qZmxVQARtCROr7ySk2JOrnba3I0LROV7JVcdteSwKBLS7lx08GRBAHbqPJJ-3NRNJMZhPctzbDo_OGcmNhR5lZPYqdfYVnM4AslcL3Q4liNzQ0gz0QShZ8JvAYJtOK1Z7TfuR3fgLsYYeCJ5kuoHZaxpn4cqtIzjNuxlzj9W3VlxA^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-type: application/json^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"device: abb7c99e-3b6e-4707-a31b-0673e2306542^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"locale-language: VIT^" ^
+  -H ^"merchantid: 511^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"sign: 11f569ed792da4e0cff8a393534a5bf2^" ^
+  -H ^"system-version: 1.5.1^" ^
+  -H ^"time-zone: GMT+07:00^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" ^
+  --data-raw ^"^{^\^"anchorId^\^":^\^"1973361965591597058^\^",^\^"isSupportH265^\^":true^}^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/financemo/vips/v2/h5/search.json?merchantId=511^&t=1783329780^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/financemo/h5/toy/v2/get/list.json?merchantId=511^&t=1783329780^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/financemo/h5/game/live-games/get.json?areaCode=VN^&merchantId=511^&languageCode=VIT^&isPlayer=1^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/grcen/h5/member-wallets/get^" ^
+  -X ^"POST^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"area: VN^" ^
+  -H ^"authorization: Bearer eyJraWQiOiJ1c2VyLW9hdXRoMi1qa3MiLCJhbGciOiJSUzI1NiJ9.eyJhZ2VudElkIjoyMDU4ODE2MzEwOTg4MjkyMDk3LCJtZXJjaGFudElkIjo1MTEsInVzZXJfbmFtZSI6IjJ2NXNuOXpzZGR2bCIsInNjb3BlIjpbImFsbCJdLCJtZW1iZXJUeXBlIjoxLCJleHAiOjE3ODQ2MjMwOTMsImp0aSI6ImUzNDFmNDE0LWI3YTAtNGMyNi1hMmUwLWM1ZDVjYTRhNDZlMyIsImNsaWVudF9pZCI6IndlYi1wbGF5ZXIiLCJhdXRob3JpdGllcyI6WyJST0xFX1dFQl9QTEFZRVIiXSwidXNlcm5hbWUiOiIydjVzbjl6c2RkdmwiLCJtZW1iZXJJZCI6IjIwNzQwNTAyNzI1NTE5MzYwMDIifQ.lFBZOKnY6PxtYp2BgVF4bGSaKOK14jWtvnSUU5OA1HIi_dVSwTLHS6Nte2Yu8K4RWhx830DceDaaT963dBoQWmSS3p4aQbZWPnZSKyOqLk2Cx8Zn-FdW46myglWZqpRTRRq0AoyhhmoZlnoFJn1A__X2JYY3T02VZqslOGm49qZmxVQARtCROr7ySk2JOrnba3I0LROV7JVcdteSwKBLS7lx08GRBAHbqPJJ-3NRNJMZhPctzbDo_OGcmNhR5lZPYqdfYVnM4AslcL3Q4liNzQ0gz0QShZ8JvAYJtOK1Z7TfuR3fgLsYYeCJ5kuoHZaxpn4cqtIzjNuxlzj9W3VlxA^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-length: 0^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"device: abb7c99e-3b6e-4707-a31b-0673e2306542^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"locale-language: VIT^" ^
+  -H ^"merchantid: 511^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"sign: 11f569ed792da4e0cff8a393534a5bf2^" ^
+  -H ^"system-version: 1.5.1^" ^
+  -H ^"time-zone: GMT+07:00^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" &
+curl ^"https://71234.tv/static/svga/loading.723195d1.svga^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -b ^"_ga=GA1.1.2143300487.1783327033; _ga_LV9KEL696C=GS2.1.s1783327033^$o1^$g1^$t1783327719^$j22^$l0^$h0^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/room/1973361965591597058?bgUrl=https://img.y3cdn.com/20260508/9ffd7c8de8f34cf2a3569a9b7a74d553.jpg^&gameId=180204113800032^&gameName=1mFast3^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-origin^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://71234.tv/static/svga/toy.5494bc52.svga^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -b ^"_ga=GA1.1.2143300487.1783327033; _ga_LV9KEL696C=GS2.1.s1783327033^$o1^$g1^$t1783327719^$j22^$l0^$h0^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/room/1973361965591597058?bgUrl=https://img.y3cdn.com/20260508/9ffd7c8de8f34cf2a3569a9b7a74d553.jpg^&gameId=180204113800032^&gameName=1mFast3^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-origin^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://71234.tv/static/svga/spin.5b60f46f.svga^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -b ^"_ga=GA1.1.2143300487.1783327033; _ga_LV9KEL696C=GS2.1.s1783327033^$o1^$g1^$t1783327719^$j22^$l0^$h0^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/room/1973361965591597058?bgUrl=https://img.y3cdn.com/20260508/9ffd7c8de8f34cf2a3569a9b7a74d553.jpg^&gameId=180204113800032^&gameName=1mFast3^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-origin^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/zbliv/h5/v3/public/live/room-cr?liveId=2074011077620305922^&isSupportH265=true^" ^
+  -X ^"POST^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"area: VN^" ^
+  -H ^"authorization: Bearer eyJraWQiOiJ1c2VyLW9hdXRoMi1qa3MiLCJhbGciOiJSUzI1NiJ9.eyJhZ2VudElkIjoyMDU4ODE2MzEwOTg4MjkyMDk3LCJtZXJjaGFudElkIjo1MTEsInVzZXJfbmFtZSI6IjJ2NXNuOXpzZGR2bCIsInNjb3BlIjpbImFsbCJdLCJtZW1iZXJUeXBlIjoxLCJleHAiOjE3ODQ2MjMwOTMsImp0aSI6ImUzNDFmNDE0LWI3YTAtNGMyNi1hMmUwLWM1ZDVjYTRhNDZlMyIsImNsaWVudF9pZCI6IndlYi1wbGF5ZXIiLCJhdXRob3JpdGllcyI6WyJST0xFX1dFQl9QTEFZRVIiXSwidXNlcm5hbWUiOiIydjVzbjl6c2RkdmwiLCJtZW1iZXJJZCI6IjIwNzQwNTAyNzI1NTE5MzYwMDIifQ.lFBZOKnY6PxtYp2BgVF4bGSaKOK14jWtvnSUU5OA1HIi_dVSwTLHS6Nte2Yu8K4RWhx830DceDaaT963dBoQWmSS3p4aQbZWPnZSKyOqLk2Cx8Zn-FdW46myglWZqpRTRRq0AoyhhmoZlnoFJn1A__X2JYY3T02VZqslOGm49qZmxVQARtCROr7ySk2JOrnba3I0LROV7JVcdteSwKBLS7lx08GRBAHbqPJJ-3NRNJMZhPctzbDo_OGcmNhR5lZPYqdfYVnM4AslcL3Q4liNzQ0gz0QShZ8JvAYJtOK1Z7TfuR3fgLsYYeCJ5kuoHZaxpn4cqtIzjNuxlzj9W3VlxA^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-length: 0^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"device: abb7c99e-3b6e-4707-a31b-0673e2306542^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"locale-language: VIT^" ^
+  -H ^"merchantid: 511^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"sign: 8342aef9022ab16ab6f96cfe00fadf62^" ^
+  -H ^"system-version: 1.5.1^" ^
+  -H ^"time-zone: GMT+07:00^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" &
+curl ^"https://sw.fnccdn.com/511/api/plr/hdcen/h5/activity-template/live^" ^
+  -X ^"POST^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"area: VN^" ^
+  -H ^"authorization: Bearer eyJraWQiOiJ1c2VyLW9hdXRoMi1qa3MiLCJhbGciOiJSUzI1NiJ9.eyJhZ2VudElkIjoyMDU4ODE2MzEwOTg4MjkyMDk3LCJtZXJjaGFudElkIjo1MTEsInVzZXJfbmFtZSI6IjJ2NXNuOXpzZGR2bCIsInNjb3BlIjpbImFsbCJdLCJtZW1iZXJUeXBlIjoxLCJleHAiOjE3ODQ2MjMwOTMsImp0aSI6ImUzNDFmNDE0LWI3YTAtNGMyNi1hMmUwLWM1ZDVjYTRhNDZlMyIsImNsaWVudF9pZCI6IndlYi1wbGF5ZXIiLCJhdXRob3JpdGllcyI6WyJST0xFX1dFQl9QTEFZRVIiXSwidXNlcm5hbWUiOiIydjVzbjl6c2RkdmwiLCJtZW1iZXJJZCI6IjIwNzQwNTAyNzI1NTE5MzYwMDIifQ.lFBZOKnY6PxtYp2BgVF4bGSaKOK14jWtvnSUU5OA1HIi_dVSwTLHS6Nte2Yu8K4RWhx830DceDaaT963dBoQWmSS3p4aQbZWPnZSKyOqLk2Cx8Zn-FdW46myglWZqpRTRRq0AoyhhmoZlnoFJn1A__X2JYY3T02VZqslOGm49qZmxVQARtCROr7ySk2JOrnba3I0LROV7JVcdteSwKBLS7lx08GRBAHbqPJJ-3NRNJMZhPctzbDo_OGcmNhR5lZPYqdfYVnM4AslcL3Q4liNzQ0gz0QShZ8JvAYJtOK1Z7TfuR3fgLsYYeCJ5kuoHZaxpn4cqtIzjNuxlzj9W3VlxA^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-length: 0^" ^
+  -H ^"dev-type: H5^" ^
+  -H ^"device: abb7c99e-3b6e-4707-a31b-0673e2306542^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"locale-language: VIT^" ^
+  -H ^"merchantid: 511^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"sign: 11f569ed792da4e0cff8a393534a5bf2^" ^
+  -H ^"system-version: 1.5.1^" ^
+  -H ^"time-zone: GMT+07:00^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  -H ^"versioncode: 101^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160.m3u8?expire=1783347797^&sign=d5ad6e4e36e43cdde0e4281db207efc1^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://www.google-analytics.com/g/collect?v=2^&tid=G-LV9KEL696C^&gtm=45je66u1v9138091101za200zd9138091101^&_p=1783327214501^&gcd=13l3l3l3l1l1^&npa=0^&dma=0^&_eu=AEAAAAQ^&ae=a^&are=1^&cid=2143300487.1783327033^&frm=0^&pscdl=noapi^&rcb=3^&sr=1920x1080^&uaa=x86^&uab=64^&uafvl=Google^%^2520Chrome^%^3B149.0.7827.201^%^7CChromium^%^3B149.0.7827.201^%^7CNot)A^%^253BBrand^%^3B24.0.0.0^&uam=^&uamb=0^&uap=Windows^&uapv=10.0.0^&uaw=0^&ul=vi^&_s=8^&tag_exp=115616986~115938465~115938469~118395335~118897921~118897931~119027224~119576881~119576885~119576891~119576895^&dl=https^%^3A^%^2F^%^2F71234.tv^%^2Froom^%^2F1973361965591597058^%^3FbgUrl^%^3Dhttps^%^3A^%^2F^%^2Fimg.y3cdn.com^%^2F20260508^%^2F9ffd7c8de8f34cf2a3569a9b7a74d553.jpg^%^26gameId^%^3D180204113800032^%^26gameName^%^3D1mFast3^&dr=https^%^3A^%^2F^%^2F71234.tv^%^2Fhome^&sid=1783329794^&sct=2^&seg=0^&dt=YYLIVE^&en=page_view^&_ss=1^&tfd=2580435^" ^
+  -X ^"POST^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-length: 0^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: no-cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"sec-fetch-storage-access: none^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160.m3u8?expire=1783347797^&sign=d5ad6e4e36e43cdde0e4281db207efc1^&_HLS_msn=1783319575^&_HLS_part=0^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319574-20260706T092311-9.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160.m3u8?expire=1783347797^&sign=d5ad6e4e36e43cdde0e4281db207efc1^&_HLS_msn=1783319575^&_HLS_part=3^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319574-20260706T092311-10.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-0.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160.m3u8?expire=1783347797^&sign=d5ad6e4e36e43cdde0e4281db207efc1^&_HLS_msn=1783319575^&_HLS_part=5^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-1.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-2.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-3.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-4.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-5.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160.m3u8?expire=1783347797^&sign=d5ad6e4e36e43cdde0e4281db207efc1^&_HLS_msn=1783319575^&_HLS_part=6^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-6.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-7.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-8.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-9.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-10.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-11.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-12.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319572-20260706T092257-13.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160.m3u8?expire=1783347797^&sign=d5ad6e4e36e43cdde0e4281db207efc1^&_HLS_msn=1783319575^&_HLS_part=8^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319573-20260706T092304-0.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319573-20260706T092304-1.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319573-20260706T092304-2.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" &
+curl ^"https://pull.cdnsi.com/live/511_1973361965591597058_cfcee0ba6cd855dae900413f28f1e160-ss-2858782990-1783319573-20260706T092304-3.ts?volcDst=MTAuMTMuOC4xNDM^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: vi^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://71234.tv^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://71234.tv/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^"

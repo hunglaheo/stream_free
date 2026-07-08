@@ -1,0 +1,1802 @@
+[
+    {
+        "id": "15d9a3f5-f03f-4dfb-b5db-75642093c52e",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://www.google.com/complete/search?client=chrome&gs_ri=chrome-mobile-ext-ansg&xssi=t&q=&oit=0&gs_rn=42&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw",
+            "path": "/complete/search?client=chrome&gs_ri=chrome-mobile-ext-ansg&xssi=t&q=&oit=0&gs_rn=42&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw",
+            "headers": {
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "text/javascript; charset=UTF-8",
+                "content-encoding": "br"
+            },
+            "content_type": "text/javascript; charset=UTF-8",
+            "body": ")]}'\n[\"\",[\"quy đổi điểm qda\",\"apple iphone 18 pro max\",\"số liệu thống kê về đội tuyển bóng đá quốc gia canada gặp đội tuyển bóng đá quốc gia maroc\",\"toyota camry hybrid\",\"phim lửa trắng\"],[\"\",\"\",\"\",\"\",\"\"],[],{\"google:clientdata\":{\"bpc\":false,\"tlw\":false},\"google:groupsinfo\":\"Ci0Ikk4SKAokTuG7mWkgZHVuZyB0w6xtIGtp4bq/bSB0aOG7i25oIGjDoG5oKAo\\u003d\",\"google:suggestdetail\":[{\"zl\":10002},{\"zl\":10002},{\"zl\":10002},{\"zl\":10002},{\"zl\":10002}],\"google:suggesteventid\":\"6156208471667525996\",\"google:suggestrelevance\":[1254,1253,1252,1251,1250],\"google:suggestsubtypes\":[[3,143,362,308],[3,143,362,308],[3,143,362,308],[3,143,362,308],[3,143,362,308]],\"google:suggesttype\":[\"QUERY\",\"QUERY\",\"QUERY\",\"QUERY\",\"QUERY\"]}]",
+            "body_size": 423,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "08afaf37-876b-47ff-92c4-81b943954c04",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://71234.tv/home",
+            "path": "/home",
+            "headers": {
+                "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 304,
+            "reason": "",
+            "headers": {},
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "5ac5f5ec-4461-4088-ba8e-3e639f78f250",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://71234.tv/cdn-cgi/rum?",
+            "path": "/cdn-cgi/rum?",
+            "headers": {
+                "content-length": "1204",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "application/json",
+                "accept": "*/*"
+            },
+            "body": "{\"referrer\":\"\",\"eventType\":3,\"versions\":{\"js\":\"2026.6.0\",\"fl\":\"2024.11.0\"},\"pageloadId\":\"85b566e5-0910-4c9c-a174-d2c60cf28073\",\"location\":\"https://71234.tv/home\",\"landingPath\":\"/home\",\"startTime\":1783488742840.7,\"nt\":\"reload\",\"siteToken\":\"e167df96a70743bd9cafb452d0524b8d\",\"lcp\":{\"value\":3322.4000000000233,\"path\":\"/room/1893285460447866882\",\"element\":\"div.app-content.home-v2-ui.home-wrapper>div.van-pull-refresh>div.van-pull-refresh__track>div.live-v2\",\"size\":141193,\"url\":\"https://71234.tv/static/img/top_bg.983fb1dd.png\",\"rld\":2865.0999999999767,\"rlt\":2.699999999953434,\"erd\":88.20000000006985,\"it\":\"css\"},\"cls\":{\"value\":0.4442761844454667,\"path\":\"/home\",\"element\":\"div.van-pull-refresh>div.van-pull-refresh__track>div.live-card\",\"currentRect\":{\"x\":0,\"y\":845,\"width\":576,\"height\":84,\"top\":845,\"right\":576,\"bottom\":929,\"left\":0},\"previousRect\":{\"x\":0,\"y\":347,\"width\":576,\"height\":582,\"top\":347,\"right\":576,\"bottom\":929,\"left\":0}},\"fcp\":{\"value\":761.5,\"path\":\"/home\"},\"ttfb\":{\"value\":366.4000000000233,\"path\":\"/home\"},\"inp\":{\"value\":128,\"path\":\"/home\",\"name\":\"pointer\",\"idy\":0.7999999999301508,\"pdn\":103.70000000006985,\"pdy\":23.5},\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"transferSize\":300},\"dt\":\"\",\"st\":1}",
+            "body_size": 1204,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 204,
+            "reason": "",
+            "headers": {
+                "content-type": "text/plain"
+            },
+            "content_type": "text/plain",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "135cebde-a3a2-4223-a7e9-4ede2d1b53a8",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://71234.tv/cdn-cgi/rum?",
+            "path": "/cdn-cgi/rum?",
+            "headers": {
+                "content-length": "529",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "application/json",
+                "accept": "*/*"
+            },
+            "body": "{\"referrer\":\"https://71234.tv/home\",\"eventType\":3,\"versions\":{\"js\":\"2026.6.0\",\"fl\":\"2024.11.0\"},\"pageloadId\":\"3e3a6c41-8423-4ea5-8fa4-0e96f0bdb243\",\"location\":\"https://71234.tv/popup/index.html\",\"landingPath\":\"/popup/index.html\",\"startTime\":1783488743576.3,\"nt\":\"navigate\",\"siteToken\":\"e167df96a70743bd9cafb452d0524b8d\",\"lcp\":{\"value\":-1},\"cls\":{\"value\":-1},\"fcp\":{\"value\":-1},\"ttfb\":{\"value\":6.099999999976717,\"path\":\"/popup/index.html\"},\"inp\":{\"value\":-1},\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"transferSize\":300},\"dt\":\"\",\"st\":1}",
+            "body_size": 529,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 204,
+            "reason": "",
+            "headers": {
+                "content-type": "text/plain"
+            },
+            "content_type": "text/plain",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "388c3c23-0597-4b24-ac21-3362b2e39d4c",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-LV9KEL696C&gtm=45je6761v9138091101za200zd9138091101&_p=1783488744695&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1441176437.1783487606&frm=0&pscdl=noapi&rcb=6&sr=480x854&uaa=&uab=&uafvl=Google%2520Chrome%3B119.0.6045.193%7CChromium%3B119.0.6045.193%7CNot%253FA_Brand%3B24.0.0.0&uam=A5010&uamb=1&uap=Android&uapv=7.1.2&uaw=0&ul=en-us&_s=5&tag_exp=115938465~115938468~119027224~119576881~119576885~119576891~119576895~119787195&sid=1783487605&sct=1&seg=1&dl=https%3A%2F%2F71234.tv%2Fhome&dr=https%3A%2F%2F71234.tv%2Froom%2F1893285460447866882%3FbgUrl%3Dhttps%3A%2F%2Fimg.y3cdn.com%2Fanchor-photo%2F20260618%2F8362b91317be4f23be783a242cab32c3.jpg%26gameId%3D180204113800032%26gameName%3D1mFast3&dt=YYLIVE&en=user_engagement&_et=262054&tfd=279611",
+            "path": "/g/collect?v=2&tid=G-LV9KEL696C&gtm=45je6761v9138091101za200zd9138091101&_p=1783488744695&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1441176437.1783487606&frm=0&pscdl=noapi&rcb=6&sr=480x854&uaa=&uab=&uafvl=Google%2520Chrome%3B119.0.6045.193%7CChromium%3B119.0.6045.193%7CNot%253FA_Brand%3B24.0.0.0&uam=A5010&uamb=1&uap=Android&uapv=7.1.2&uaw=0&ul=en-us&_s=5&tag_exp=115938465~115938468~119027224~119576881~119576885~119576891~119576895~119787195&sid=1783487605&sct=1&seg=1&dl=https%3A%2F%2F71234.tv%2Fhome&dr=https%3A%2F%2F71234.tv%2Froom%2F1893285460447866882%3FbgUrl%3Dhttps%3A%2F%2Fimg.y3cdn.com%2Fanchor-photo%2F20260618%2F8362b91317be4f23be783a242cab32c3.jpg%26gameId%3D180204113800032%26gameName%3D1mFast3&dt=YYLIVE&en=user_engagement&_et=262054&tfd=279611",
+            "headers": {
+                "content-length": "0",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "*/*"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 204,
+            "reason": "",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "0"
+            },
+            "content_type": "text/plain",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "86c2104a-c526-40ed-945d-aff7b48ebb44",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://71234.tv/sw.js",
+            "path": "/sw.js",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 304,
+            "reason": "",
+            "headers": {},
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "b509ad10-02f3-4ce2-a77f-7a861c4f865f",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-LV9KEL696C&gtm=45je6761v9138091101za200zd9138091101&_p=1783489022702&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1441176437.1783487606&frm=0&ngs=1&pscdl=noapi&rcb=12&sr=480x854&uaa=&uab=&uafvl=Google%2520Chrome%3B119.0.6045.193%7CChromium%3B119.0.6045.193%7CNot%253FA_Brand%3B24.0.0.0&uam=A5010&uamb=1&uap=Android&uapv=7.1.2&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118826210~119027224~119576881~119576885~119576891~119576895&sid=1783487605&sct=1&seg=1&dl=https%3A%2F%2F71234.tv%2Fhome&dt=YYLIVE&en=page_view&_ee=1&tfd=603",
+            "path": "/g/collect?v=2&tid=G-LV9KEL696C&gtm=45je6761v9138091101za200zd9138091101&_p=1783489022702&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1441176437.1783487606&frm=0&ngs=1&pscdl=noapi&rcb=12&sr=480x854&uaa=&uab=&uafvl=Google%2520Chrome%3B119.0.6045.193%7CChromium%3B119.0.6045.193%7CNot%253FA_Brand%3B24.0.0.0&uam=A5010&uamb=1&uap=Android&uapv=7.1.2&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118826210~119027224~119576881~119576885~119576891~119576895&sid=1783487605&sct=1&seg=1&dl=https%3A%2F%2F71234.tv%2Fhome&dt=YYLIVE&en=page_view&_ee=1&tfd=603",
+            "headers": {
+                "content-length": "0",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "*/*"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 204,
+            "reason": "",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "0"
+            },
+            "content_type": "text/plain",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "120c7a69-6f01-451a-986c-2cf5fda57e8a",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/app-versions/client/latest",
+            "path": "/511/api/plr/app-versions/client/latest",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "31c45d54-c5bd-4790-b08d-49a259c2d288",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://71234.tv/cdn-cgi/rum?",
+            "path": "/cdn-cgi/rum?",
+            "headers": {
+                "content-length": "888",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "application/json",
+                "accept": "*/*"
+            },
+            "body": "{\"memory\":{\"totalJSHeapSize\":29400000,\"usedJSHeapSize\":23100000,\"jsHeapSizeLimit\":1008000000},\"resources\":[],\"referrer\":\"https://71234.tv/home\",\"eventType\":1,\"firstPaint\":0,\"firstContentfulPaint\":0,\"startTime\":1783489022764.6,\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.6.0\",\"timings\":2},\"pageloadId\":\"cf22003a-8853-4661-940d-2b4c6053b6ca\",\"location\":\"https://71234.tv/popup/index.html\",\"nt\":\"navigate\",\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":3.5,\"domainLookupEnd\":3.5,\"connectStart\":3.5,\"connectEnd\":3.5,\"requestStart\":3.5,\"responseStart\":7.599999999976717,\"responseEnd\":7.800000000046566,\"domInteractive\":37.59999999997672,\"domComplete\":149.70000000006985,\"loadEventStart\":149.70000000006985,\"loadEventEnd\":149.80000000004657,\"firstInterimResponseStart\":7.599999999976717,\"transferSize\":300,\"decodedBodySize\":0},\"dt\":\"\",\"siteToken\":\"e167df96a70743bd9cafb452d0524b8d\",\"st\":2}",
+            "body_size": 888,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 204,
+            "reason": "",
+            "headers": {
+                "content-type": "text/plain"
+            },
+            "content_type": "text/plain",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "a0341cf0-ed0e-4d1a-8921-187905bf7aa8",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://71234.tv/cdn-cgi/rum?",
+            "path": "/cdn-cgi/rum?",
+            "headers": {
+                "content-length": "924",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "application/json",
+                "accept": "*/*"
+            },
+            "body": "{\"memory\":{\"totalJSHeapSize\":29400000,\"usedJSHeapSize\":23100000,\"jsHeapSizeLimit\":1008000000},\"resources\":[],\"referrer\":\"\",\"eventType\":1,\"firstPaint\":656.6999999999534,\"firstContentfulPaint\":656.6999999999534,\"startTime\":1783489022131.9,\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.6.0\",\"timings\":2},\"pageloadId\":\"1a70d913-aa25-46d5-b0f5-769eda727f8e\",\"location\":\"https://71234.tv/home\",\"nt\":\"reload\",\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":9.599999999976717,\"domainLookupEnd\":9.599999999976717,\"connectStart\":9.599999999976717,\"connectEnd\":9.599999999976717,\"requestStart\":9.599999999976717,\"responseStart\":299.4000000000233,\"responseEnd\":299.5999999999767,\"domInteractive\":378,\"domComplete\":782.8000000000466,\"loadEventStart\":782.8000000000466,\"loadEventEnd\":783,\"firstInterimResponseStart\":299.4000000000233,\"transferSize\":300,\"decodedBodySize\":0},\"dt\":\"\",\"siteToken\":\"e167df96a70743bd9cafb452d0524b8d\",\"st\":2}",
+            "body_size": 924,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 204,
+            "reason": "",
+            "headers": {
+                "content-type": "text/plain"
+            },
+            "content_type": "text/plain",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "e14b96a7-9023-48d9-ad26-2dd2e488312c",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://sw.fnccdn.com/511/api/plr/app-versions/client/latest",
+            "path": "/511/api/plr/app-versions/client/latest",
+            "headers": {
+                "content-length": "0",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "gzip"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"maintainContent\":\"Thông báo nâng cấp máy chủ\\n\\nKính gửi Quý Người Dùng,\\n\\nĐể mang đến trải nghiệm chơi game mượt mà và chất lượng hơn, chúng tôi sẽ tiến hành nâng cấp máy chủ vào ngày 24 tháng 4 năm 2025, từ 03:00 đến 9:00 (Giờ Indochina, ICT, UTC+7). Trong thời gian này, bạn có thể không đăng nhập được vào ứng dụng. Cảm ơn sự thông cảm và ủng hộ của bạn!\\n\\nTrân trọng,\",\"luujy\":\"Fad6Vmk6Gvx9hjOdaVdigi3DISAtbjn89qQ/C8t+Fwc=\",\"c\":\"VN\",\"customerService\":\"https://vm.livechattalk.com/0hb7w5w6pyk7e04clwxs02gb2h\",\"browserLuujy\":\"https://yylive.top\",\"updateContent\":\"[Thông Báo Quan Trọng] Cập Nhật Ứng Dụng\\n\\nNhằm mang đến cho quý hội viên trải nghiệm chơi game mượt mà và tiện lợi hơn, nền tảng đã tiến hành tối ưu hóa và nâng cấp ứng dụng. Vui lòng cập nhật và cài đặt phiên bản mới nhất để đảm bảo sử dụng bình thường và tận hưởng dịch vụ tốt hơn.\\n\\nXin cảm ơn sự ủng hộ của quý hội viên. Chúc quý vị chơi game vui vẻ!\",\"status\":false,\"updateType\":1}}",
+            "body_size": 765,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "53b57447-5844-4c5c-b311-209b284df049",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/merchants/get/config",
+            "path": "/511/api/plr/merchants/get/config",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "d19a8950-1ed1-4bce-892e-a9885f7542cd",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://sw.fnccdn.com/511/api/plr/merchants/get/config",
+            "path": "/511/api/plr/merchants/get/config",
+            "headers": {
+                "content-length": "0",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "gzip"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"googleId\":\"\",\"gameUnchecked\":\"https://sas.y3cdn.com/20240429/2cfc70d19ddd4c5183d13ba7a7ca1bab.webp\",\"maintenanceAnnouncement\":\"\",\"activityChecked\":\"https://sas.y3cdn.com/20240429/158c58c2a9a14f2dae896ded90edf9a2.webp\",\"pushPlatform\":null,\"withdrawRiskV75\":\"1\",\"loginTypeV58\":\"1,2,3,6\",\"openInvite\":\"1\",\"accessId\":null,\"googleSiteKey\":\"6Lc3qYcqAAAAAJD99klqKOhoHYs66dL2C_hWpAq-\",\"systemArea\":\"VN\",\"headPortraitLimit\":\"1\",\"visitHomePageStyle\":\"0\",\"jpushKey\":null,\"id\":511,\"homeUnchecked\":\"https://sas.y3cdn.com/20240429/4cc39ba24aff4c20967b4058cf1f373c.webp\",\"gameChecked\":\"https://sas.y3cdn.com/20240429/49638fa987b1460797337e6ee66d3957.webp\",\"liveUnchecked\":\"https://sas.y3cdn.com/20240429/c99a86e142b6498f9cfd4dd76a08ae44.webp\",\"registerRiskV58\":\"1\",\"loginDisplayV58\":\"1\",\"ip\":\"113.161.164.113\",\"aboutUrl\":\"https://cdn.k1cdn.com/interactive/aboutus/index.html#/\",\"registerMethodV58\":\"1\",\"claimCodeUrl\":\"https://ia.k1cdn.com/activity/25/redemptionCode\",\"cloudflareSiteKey\":\"0x4AAAAAABejZ8pgZzv7gFcZ\",\"loginMode\":\"2,3,6\",\"registerTypeV58\":\"1,2\",\"promotionUrl\":\"https://cdn.k1cdn.com/interactive/promotiondata/index.html#/\",\"memberOpenArea\":\"\",\"activityUrl\":\"https://ia.k1cdn.com/activity/25/\",\"registerWayV58\":\"1\",\"uagUrl\":\"https://cdn.k1cdn.com/interactive/aboutus/index.html#/userAgreement?tipJump=true\",\"status\":1,\"serviceUrl\":\"https://vm.livechattalk.com/0hb7w5w6pyk7e04clwxs02gb2h?params=ePOOgUY474rmtdaeYeSliG8WzEi1hEibR84FEasOCtdR1VtI1Y1kMexKhVuoNCcU\",\"registerTypeDisplayV58\":\"1\",\"claimRiskV79\":\"1\",\"loginRiskV58\":\"1\",\"googleLogin\":\"https://gtd.k1cdn.com/googlelogin\",\"googleVerify\":\"https://gtd.k1cdn.com/recaptcha/\",\"myChecked\":\"https://sas.y3cdn.com/20240429/3d392e5586374223b2357eba4411e3f2.webp\",\"openIndex\":\"0\",\"tgName\":\"@DFbussiness\",\"pagUrl\":\"https://cdn.k1cdn.com/interactive/aboutus/index.html#/privacyAgreement?tipJump=true\",\"registerWayEmailV58\":\"1\",\"nonLoginVisitController\":\"0\",\"activityUnchecked\":\"https://sas.y3cdn.com/20240429/e18c3c7a5ac949558cc3921f7308d1f5.webp\",\"c\":\"VN\",\"openIsRegister\":\"1\",\"tencentAppId\":\"189991424\",\"myUnchecked\":\"https://sas.y3cdn.com/20240429/1bdb94c411564066b6ce015b6c50114d.webp\",\"tgUrl\":\"https://t.me/DFbussiness\",\"liveChecked\":\"https://sas.y3cdn.com/20240429/657ef00795c7402ca5aa896a523d5700.webp\",\"mwul\":\"UX4BzJUrFsej+jgHFHYttXu3sTVKxHOcDn/2wAUMRJQ=\",\"phoneReg\":\"1\",\"homeChecked\":\"https://sas.y3cdn.com/20240429/5ebafa051aeb4d1096b4ef8f6de9a907.webp\",\"forbidAreaCode\":\"\",\"registrationMethod\":\"2,3\",\"openAreaCode\":\"84,91,55,63,95,82\"}}",
+            "body_size": 1142,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "e0e8f60e-0a11-464e-9a59-ec44761890f3",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/grcen/h5/currcy/v2.json?merchantId=511&lang=VIT&t=1783489020",
+            "path": "/511/api/plr/grcen/h5/currcy/v2.json?merchantId=511&lang=VIT&t=1783489020",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "9667c30e-06cc-479a-ba58-568d51ea7c0a",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://sw.fnccdn.com/511/api/plr/grcen/h5/currcy/v2.json?merchantId=511&lang=VIT&t=1783489020",
+            "path": "/511/api/plr/grcen/h5/currcy/v2.json?merchantId=511&lang=VIT&t=1783489020",
+            "headers": {
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "zstd"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":[{\"flag\":\"https://game.baccdn.com/images-sg/currency/VND.png\",\"visible\":true,\"rate\":\"200\",\"name\":\"Đồng việt nam\",\"currencySymbol\":\"₫\",\"currencyCode\":\"VND\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/GOLD.png\",\"visible\":true,\"rate\":\"1\",\"name\":\"Tiền vàng\",\"currencySymbol\":\"¤\",\"currencyCode\":\"GOLD\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/USDT.png\",\"visible\":true,\"rate\":\"0.01\",\"name\":\"USDT\",\"currencySymbol\":\"₮\",\"currencyCode\":\"USDT\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/USD.png\",\"visible\":true,\"rate\":\"0.01\",\"name\":\"Đô la\",\"currencySymbol\":\"$\",\"currencyCode\":\"USD\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/INR.png\",\"visible\":false,\"rate\":\"0.8\",\"name\":\"Rupee Ấn Độ\",\"currencySymbol\":\"₹\",\"currencyCode\":\"INR\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/BRL.png\",\"visible\":false,\"rate\":\"0.05\",\"name\":\"Đồng Real của Brazil\",\"currencySymbol\":\"R$\",\"currencyCode\":\"BRL\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/THB.png\",\"visible\":false,\"rate\":\"0.35\",\"name\":\"Bạt Thái Lan\",\"currencySymbol\":\"฿\",\"currencyCode\":\"THB\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/EUR.png\",\"visible\":false,\"rate\":\"0.01\",\"name\":\"EUR\",\"currencySymbol\":\"€\",\"currencyCode\":\"EUR\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/JPY.png\",\"visible\":true,\"rate\":\"1.2\",\"name\":\"JPY\",\"currencySymbol\":\"¥\",\"currencyCode\":\"JPY\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/GBP.png\",\"visible\":false,\"rate\":\"0.009\",\"name\":\"GBP\",\"currencySymbol\":\"£\",\"currencyCode\":\"GBP\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/AUD.png\",\"visible\":false,\"rate\":\"0.015\",\"name\":\"Đô la Úc\",\"currencySymbol\":\"$\",\"currencyCode\":\"AUD\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/CAD.png\",\"visible\":false,\"rate\":\"0.014\",\"name\":\"đô la Canada\",\"currencySymbol\":\"$\",\"currencyCode\":\"CAD\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/CHF.png\",\"visible\":false,\"rate\":\"0.011\",\"name\":\"Franc Thụy Sĩ\",\"currencySymbol\":\"Fr\",\"currencyCode\":\"CHF\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/HKD.png\",\"visible\":false,\"rate\":\"0.08\",\"name\":\"đôla Hong Kong\",\"currencySymbol\":\"$\",\"currencyCode\":\"HKD\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/NZD.png\",\"visible\":false,\"rate\":\"0.017\",\"name\":\"Đô la New Zealand\",\"currencySymbol\":\"$\",\"currencyCode\":\"NZD\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/SEK.png\",\"visible\":false,\"rate\":\"0.11\",\"name\":\"Đồng curon Thụy Điển\",\"currencySymbol\":\"kr\",\"currencyCode\":\"SEK\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/KRW.png\",\"visible\":false,\"rate\":\"12\",\"name\":\"thắng\",\"currencySymbol\":\"₩\",\"currencyCode\":\"KRW\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/SGD.png\",\"visible\":false,\"rate\":\"0.015\",\"name\":\"Đô la Singapore\",\"currencySymbol\":\"$\",\"currencyCode\":\"SGD\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/NOK.png\",\"visible\":false,\"rate\":\"0.11\",\"name\":\"NOK\",\"currencySymbol\":\"kr\",\"currencyCode\":\"NOK\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/IDR.png\",\"visible\":false,\"rate\":\"160\",\"name\":\"Rupiah Indonesia\",\"currencySymbol\":\"Rp\",\"currencyCode\":\"IDR\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/MYR.png\",\"visible\":false,\"rate\":\"0.04\",\"name\":\"Đồng Ringgit Mã Lai\",\"currencySymbol\":\"RM\",\"currencyCode\":\"MYR\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/DKK.png\",\"visible\":false,\"rate\":\"0.1\",\"name\":\"Krone Đan Mạch\",\"currencySymbol\":\"kr\",\"currencyCode\":\"DKK\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/AED.png\",\"visible\":false,\"rate\":\"0.037\",\"name\":\"Dirham\",\"currencySymbol\":\"Dhs\",\"currencyCode\":\"AED\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/EGP.png\",\"visible\":false,\"rate\":\"0.17\",\"name\":\"Bảng Ai Cập\",\"currencySymbol\":\"E£\",\"currencyCode\":\"EGP\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/PKR.png\",\"visible\":false,\"rate\":\"1.8\",\"name\":\"Đồng Rupee Pakistan\",\"currencySymbol\":\"₨\",\"currencyCode\":\"PKR\"},{\"flag\":\"https://game.baccdn.com/images-sg/currency/BGN.png\",\"visible\":false,\"rate\":\"0.02\",\"name\":\"L",
+            "body_size": 1491,
+            "body_truncated": true,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "a781273b-bbd8-4267-a747-0a78aa348c80",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/grcen/h5/operatingAreaConfig/v1/getAppOperatingAreaConfigList.json?merchantId=511&t=1783489020",
+            "path": "/511/api/plr/grcen/h5/operatingAreaConfig/v1/getAppOperatingAreaConfigList.json?merchantId=511&t=1783489020",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "a36b1881-1e8e-44fd-ae5d-0a84fc38b089",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/financemo/siteConfig/h5/getSiteH5",
+            "path": "/511/api/plr/financemo/siteConfig/h5/getSiteH5",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "ced2b1ab-04e4-416f-a450-7af4ee720cff",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://sw.fnccdn.com/511/api/plr/grcen/h5/operatingAreaConfig/v1/getAppOperatingAreaConfigList.json?merchantId=511&t=1783489020",
+            "path": "/511/api/plr/grcen/h5/operatingAreaConfig/v1/getAppOperatingAreaConfigList.json?merchantId=511&t=1783489020",
+            "headers": {
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "zstd"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":[{\"areaCode\":\"AD\",\"merchantId\":511,\"areaName\":\"安道爾\",\"displayOrder\":3,\"ids\":null,\"recommend\":false,\"id\":\"68\",\"status\":1},{\"areaCode\":\"AE\",\"merchantId\":511,\"areaName\":\"阿拉伯聯合大公國\",\"displayOrder\":62,\"ids\":null,\"recommend\":false,\"id\":\"3353\",\"status\":1},{\"areaCode\":\"AF\",\"merchantId\":511,\"areaName\":\"阿富汗\",\"displayOrder\":97,\"ids\":null,\"recommend\":false,\"id\":\"8\",\"status\":1},{\"areaCode\":\"AG\",\"merchantId\":511,\"areaName\":\"安地卡及巴布達\",\"displayOrder\":128,\"ids\":null,\"recommend\":false,\"id\":\"128\",\"status\":1},{\"areaCode\":\"AI\",\"merchantId\":511,\"areaName\":\"安奎拉\",\"displayOrder\":171,\"ids\":null,\"recommend\":false,\"id\":\"113\",\"status\":1},{\"areaCode\":\"AL\",\"merchantId\":511,\"areaName\":\"阿爾巴尼亞\",\"displayOrder\":203,\"ids\":null,\"recommend\":false,\"id\":\"23\",\"status\":1},{\"areaCode\":\"AM\",\"merchantId\":511,\"areaName\":\"亞美尼亞\",\"displayOrder\":228,\"ids\":null,\"recommend\":false,\"id\":\"158\",\"status\":1},{\"areaCode\":\"AO\",\"merchantId\":511,\"areaName\":\"安哥拉\",\"displayOrder\":275,\"ids\":null,\"recommend\":false,\"id\":\"83\",\"status\":1},{\"areaCode\":\"AQ\",\"merchantId\":511,\"areaName\":\"南極洲\",\"displayOrder\":324,\"ids\":null,\"recommend\":false,\"id\":\"98\",\"status\":1},{\"areaCode\":\"AR\",\"merchantId\":511,\"areaName\":\"阿根廷\",\"displayOrder\":335,\"ids\":null,\"recommend\":false,\"id\":\"143\",\"status\":1},{\"areaCode\":\"AS\",\"merchantId\":511,\"areaName\":\"美屬薩摩亞\",\"displayOrder\":386,\"ids\":null,\"recommend\":false,\"id\":\"53\",\"status\":1},{\"areaCode\":\"AT\",\"merchantId\":511,\"areaName\":\"奧地利\",\"displayOrder\":410,\"ids\":null,\"recommend\":false,\"id\":\"203\",\"status\":1},{\"areaCode\":\"AU\",\"merchantId\":511,\"areaName\":\"澳洲\",\"displayOrder\":446,\"ids\":null,\"recommend\":false,\"id\":\"188\",\"status\":1},{\"areaCode\":\"AW\",\"merchantId\":511,\"areaName\":\"荷屬阿魯巴\",\"displayOrder\":490,\"ids\":null,\"recommend\":false,\"id\":\"173\",\"status\":1},{\"areaCode\":\"AZ\",\"merchantId\":511,\"areaName\":\"亞塞拜然\",\"displayOrder\":536,\"ids\":null,\"recommend\":false,\"id\":\"218\",\"status\":1},{\"areaCode\":\"BA\",\"merchantId\":511,\"areaName\":\"波士尼亞與赫塞哥維納\",\"displayOrder\":550,\"ids\":null,\"recommend\":false,\"id\":\"398\",\"status\":1},{\"areaCode\":\"BB\",\"merchantId\":511,\"areaName\":\"巴貝多\",\"displayOrder\":610,\"ids\":null,\"recommend\":false,\"id\":\"278\",\"status\":1},{\"areaCode\":\"BD\",\"merchantId\":511,\"areaName\":\"孟加拉\",\"displayOrder\":644,\"ids\":null,\"recommend\":false,\"id\":\"263\",\"status\":1},{\"areaCode\":\"BE\",\"merchantId\":511,\"areaName\":\"比利時\",\"displayOrder\":674,\"ids\":null,\"recommend\":false,\"id\":\"323\",\"status\":1},{\"areaCode\":\"BF\",\"merchantId\":511,\"areaName\":\"布吉納法索\",\"displayOrder\":700,\"ids\":null,\"recommend\":false,\"id\":\"473\",\"status\":1},{\"areaCode\":\"BG\",\"merchantId\":511,\"areaName\":\"保加利亞\",\"displayOrder\":723,\"ids\":null,\"recommend\":false,\"id\":\"458\",\"status\":1},{\"areaCode\":\"BH\",\"merchantId\":511,\"areaName\":\"巴林\",\"displayOrder\":772,\"ids\":null,\"recommend\":false,\"id\":\"248\",\"status\":1},{\"areaCode\":\"BI\",\"merchantId\":511,\"areaName\":\"蒲隆地\",\"displayOrder\":802,\"ids\":null,\"recommend\":false,\"id\":\"488\",\"status\":1},{\"areaCode\":\"BJ\",\"merchantId\":511,\"areaName\":\"貝南\",\"displayOrder\":852,\"ids\":null,\"recommend\":false,\"id\":\"353\",\"status\":1},{\"areaCode\":\"BL\",\"merchantId\":511,\"areaName\":\"聖巴瑟米\",\"displayOrder\":877,\"ids\":null,\"recommend\":false,\"id\":\"2633\",\"status\":1},{\"areaCode\":\"BM\",\"merchantId\":511,\"areaName\":\"百慕達\",\"displayOrder\":913,\"ids\":null,\"recommend\":false,\"id\":\"308\",\"status\":1},{\"areaCode\":\"BN\",\"merchantId\":511,\"areaName\":\"汶萊\",\"displayOrder\":962,\"ids\":null,\"recommend\":false,\"id\":\"443\",\"status\":1},{\"areaCode\":\"BO\",\"merchantId\":511,\"areaName\":\"玻利維亞\",\"displayOrder\":993,\"ids\":null,\"recommend\":false,\"id\":\"383\",\"status\":1},{\"areaCode\":\"BR\",\"merchantId\":511,\"areaName\":\"巴西\",\"displayOrder\":1044,\"ids\":null,\"recommend\":false,\"id\":\"428\",\"status\":1},{\"areaCode\":\"BS\",\"merchantId\":511,\"areaName\":\"巴哈馬\",\"displayOrder\":1072,\"ids\":null,\"recommend\":false,\"id\":\"233\",\"status\":1},{\"areaCode\":\"BT\",\"merchantId\":511,\"areaName\":\"不丹\",\"displayOrder\":1099,\"ids\":null,\"recommend\":false,\"id\":\"368\",\"status\":1},{\"areaCode\":\"BW\",\"merchantId\":511,\"areaName\":\"波札那\",\"displayOrder\":1142,\"ids\":null,\"recommend\":false,\"id\":\"413\",\"status\":1},{\"areaCode\":\"BY\",\"merchantId\":511,\"areaName\":\"白俄羅斯\",\"displ",
+            "body_size": 4683,
+            "body_truncated": true,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "9d023db2-8604-4fbe-90c4-db66eec71742",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://sw.fnccdn.com/511/api/plr/financemo/siteConfig/h5/getSiteH5",
+            "path": "/511/api/plr/financemo/siteConfig/h5/getSiteH5",
+            "headers": {
+                "content-length": "21",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "application/json",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "{\"domain\":\"71234.tv\"}",
+            "body_size": 21,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "gzip"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"area\":\"VN\",\"flag\":\"https://game.baccdn.com/images-sg/currency/VND.png\",\"buttonColor\":\"\",\"displayOrder\":4,\"currencySymbol\":\"₫\",\"language\":\"VIT\",\"areaName\":\"越南\",\"rate\":\"200\",\"pageColor\":\"\",\"inviteCode\":\"\",\"name\":\"越南盾\",\"currency\":\"VND\",\"style\":\"1\"}}",
+            "body_size": 226,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "1a83c81f-f13c-4d76-af05-18f3d4f1e166",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/grcen/h5/configuration/new/ocs?memberId=&merchantId=511&areaCode=VN&langCode=VIT&t=1783489020",
+            "path": "/511/api/plr/grcen/h5/configuration/new/ocs?memberId=&merchantId=511&areaCode=VN&langCode=VIT&t=1783489020",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "7b230d45-dbce-4c74-b123-9a31359c8677",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://sw.fnccdn.com/511/api/plr/grcen/h5/languages/web/get.json",
+            "path": "/511/api/plr/grcen/h5/languages/web/get.json",
+            "headers": {
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "zstd"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":[{\"code\":\"ENU\",\"displayName\":\"English\"},{\"code\":\"VIT\",\"displayName\":\"Tiếng Việt\"},{\"code\":\"HIN\",\"displayName\":\"हिंदी\"},{\"code\":\"PTB\",\"displayName\":\"Português\"},{\"code\":\"THA\",\"displayName\":\"ไทย\"},{\"code\":\"RUS\",\"displayName\":\"Русский\"},{\"code\":\"FRA\",\"displayName\":\"Français\"},{\"code\":\"KOR\",\"displayName\":\"한국어\"},{\"code\":\"ESP\",\"displayName\":\"español\"},{\"code\":\"ITA\",\"displayName\":\"Italiano\"},{\"code\":\"CHT\",\"displayName\":\"繁體中文\"},{\"code\":\"JPN\",\"displayName\":\"日本語\"},{\"code\":\"IND\",\"displayName\":\"Bahasa Indonesia\"},{\"code\":\"MYS\",\"displayName\":\"Bahasa Melayu\"},{\"code\":\"BGD\",\"displayName\":\"বাংলা\"}]}",
+            "body_size": 328,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "def28b0c-2aec-4b99-aef9-7cd048256ac3",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/h5/v3/aggregates/startup-data/index",
+            "path": "/511/api/plr/h5/v3/aggregates/startup-data/index",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "7e91b8de-da37-4ac2-9d5f-7e7577c0ab83",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/hdcen/first-recharge/get",
+            "path": "/511/api/plr/hdcen/first-recharge/get",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "51eff23b-b5c1-45f6-9539-935f61d83ee3",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/h5/v3/public/live/lrl.json?pageNum=1&pageSize=50&merchantId=511&area=VN&lang=VIT&t=1783489020",
+            "path": "/511/api/plr/h5/v3/public/live/lrl.json?pageNum=1&pageSize=50&merchantId=511&area=VN&lang=VIT&t=1783489020",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "c8a59fdd-c20f-41fd-840c-6b930151ea30",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/financemo/h5/home-notice/get",
+            "path": "/511/api/plr/financemo/h5/home-notice/get",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "eb5107c3-6443-49a8-90e4-c6f28e742035",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://sw.fnccdn.com/511/api/plr/grcen/h5/configuration/new/ocs?memberId=&merchantId=511&areaCode=VN&langCode=VIT&t=1783489020",
+            "path": "/511/api/plr/grcen/h5/configuration/new/ocs?memberId=&merchantId=511&areaCode=VN&langCode=VIT&t=1783489020",
+            "headers": {
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "gzip"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"customerUrl\":\"https://vm.livechattalk.com/0hb7w5w6pyk7e04clwxs02gb2h?params=ePOOgUY474rmtdaeYeSliG8WzEi1hEibR84FEasOCtdR1VtI1Y1kMexKhVuoNCcU\",\"linkMethod\":1}}",
+            "body_size": 181,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "bd621ec3-1720-43d1-bd0b-a968bce479d9",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://sw.fnccdn.com/511/api/plr/h5/v3/aggregates/startup-data/index",
+            "path": "/511/api/plr/h5/v3/aggregates/startup-data/index",
+            "headers": {
+                "content-length": "0",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "gzip"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"homeNoticeDTOS\":[{\"imageUrl\":null,\"id\":210029,\"title\":\"📣 SỰ KIỆN HOT TRÊN YYLIVE 📣\",\"type\":0,\"content\":\"<p><font color=\\\"#c24f4a\\\">SỰ KIỆN HOT TRÊN YYLIVE</font><br/>🎗Đua top tổng nạp tháng<br/>🎗Thưởng đơn nạp đầu lên đến 50.888.000<br/>🎗Cược càng nhiều hoàn trả càng cao<br/>🎗Mưa lì xì mỗi ngày<br/>🎗Điểm danh mỗi ngày nhận quà liền tay<br/>🎗Hoàn vip tuần<br/>🎗Thắng liên tiếp xách ngay tiền thưởng<br/>🎗Hoàn trả thắng thua lên đến 80.000.000<br/>🎗Vòng quay may mắn càng quay càng trúng<br/>🎗Ngoài ra còn rất nhiều khuyến mãi hấp dẫn khác đang chờ đợi bạn!<br/>👉Tên miền địa chỉ nền tảng:<br/>&nbsp; &nbsp; &nbsp; yy.live<br/>&nbsp; &nbsp; &nbsp; yylive.com<br/></p>\",\"jumpUrl\":null}],\"frontPageConfigViewDTO\":{\"backgroundUrl\":\"https://game.baccdn.com/images-sg/20251229/background06.png\",\"backgroundColor\":null,\"functionList\":[{\"code\":\"recharge\",\"color\":null,\"displayOrder\":1,\"id\":\"1\",\"iconUrl\":\"https://game.baccdn.com/images-sg/20251229/Recharge06.svg\",\"type\":\"1\"},{\"code\":\"withdraw\",\"color\":null,\"displayOrder\":2,\"id\":\"2\",\"iconUrl\":\"https://game.baccdn.com/images-sg/20251229/Withdraw06.svg\",\"type\":\"2\"},{\"code\":\"gameCenter\",\"color\":null,\"displayOrder\":3,\"id\":\"3\",\"iconUrl\":\"https://game.baccdn.com/images-sg/20251229/GameCenter06.svg\",\"type\":\"3\"},{\"code\":\"activity\",\"color\":null,\"displayOrder\":4,\"id\":\"4\",\"iconUrl\":\"https://game.baccdn.com/images-sg/20251229/Activity06.svg\",\"type\":\"4\"}],\"areaList\":null,\"isEnabled\":1,\"iconType\":1,\"deviceList\":null,\"displayOrder\":9999,\"id\":30008,\"iconUrl\":\"https://game.baccdn.com/images-sg/20251229/icon06.png\",\"title\":\"通用配置\",\"backgroundType\":1},\"gameJsonDto\":{\"bjjbf\":5,\"area\":\"OT\",\"luujy\":\"jTPWAmUbg47K17VaEVJjPmZibBzy2LMQWach9g80xq0LXtpQnk/H1YK7tJKx8CCny441pBYn9EbQn0Z1aLAqb9yt43fe113pbcggMZzP3eY=\",\"language\":\"\"}}}",
+            "body_size": 977,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "af5e147d-1dc2-49e1-887c-fb95b3797767",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://ht.fnccdn.com/xnntc/ip-detail/listener",
+            "path": "/xnntc/ip-detail/listener",
+            "headers": {
+                "content-length": "392",
+                "content-type": "application/json",
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "{\"pfi\":\"tCNIPapJFK9DE3WEB/CzZw==\",\"ui\":\"\",\"du\":\"HSTEXc278ZAp5nNWwuKMfWcO/Gx9jMEOUr8dXj+yQ2XmPx93Htgfr4/jUXbqb1NL\",\"dt\":\"q9bxQ4legfWy0FHYOSVDjg==\",\"pgi\":\"RVUpnMB1Y2KU3iJIrHXk9g==\",\"ia\":\"\",\"ac\":\"\",\"inviteCode\":\"\",\"ul\":\"94t09wUlaRRL+MLqzwSgOQ==\",\"av\":\"\",\"net\":\"2wR4XkEu0sDrkwXzUEd6Yw==\",\"ele\":\"uPWa7YsZUDrVw2sACcC6Rw==\",\"chg\":\"qjzHJslckLfGXVxBWQhAdw==\",\"sign\":\"8973f3db95dcfdd4b963769aa05923b0\"}",
+            "body_size": 392,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-length": "1"
+            },
+            "content_type": "application/json",
+            "body": "0",
+            "body_size": 1,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "b538644b-8086-4bc1-a57b-2b3936720782",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://sw.fnccdn.com/511/api/plr/hdcen/first-recharge/get",
+            "path": "/511/api/plr/hdcen/first-recharge/get",
+            "headers": {
+                "content-length": "0",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "gzip"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"popUps\":true,\"activityList\":[{\"id\":120010,\"list\":[{\"condition\":\"150000\",\"award\":\"29000\",\"sort\":\"1\",\"awardType\":1,\"status\":1},{\"condition\":\"250000\",\"award\":\"44000\",\"sort\":\"2\",\"awardType\":1,\"status\":1},{\"condition\":\"500000\",\"award\":\"94000\",\"sort\":\"3\",\"awardType\":1,\"status\":1},{\"condition\":\"2500000\",\"award\":\"194000\",\"sort\":\"4\",\"awardType\":1,\"status\":1},{\"condition\":\"5000000\",\"award\":\"344000\",\"sort\":\"5\",\"awardType\":1,\"status\":1},{\"condition\":\"25000000\",\"award\":\"1944000\",\"sort\":\"6\",\"awardType\":1,\"status\":1},{\"condition\":\"50000000\",\"award\":\"4444000\",\"sort\":\"7\",\"awardType\":1,\"status\":1},{\"condition\":\"150000000\",\"award\":\"5444000\",\"sort\":\"8\",\"awardType\":1,\"status\":1},{\"condition\":\"250000000\",\"award\":\"10444000\",\"sort\":\"9\",\"awardType\":1,\"status\":1},{\"condition\":\"500000000\",\"award\":\"25444000\",\"sort\":\"10\",\"awardType\":1,\"status\":1}]}],\"url\":\"https://cdn.k1cdn.com/interactive/firstcharge/index.html#/\"}}",
+            "body_size": 266,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "ca0dcefb-220b-4b4b-989a-a55fb67c9625",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://sw.fnccdn.com/511/api/plr/financemo/h5/home-notice/get",
+            "path": "/511/api/plr/financemo/h5/home-notice/get",
+            "headers": {
+                "content-length": "0",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "gzip"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":[{\"imageUrl\":null,\"id\":210029,\"title\":\"📣 SỰ KIỆN HOT TRÊN YYLIVE 📣\",\"type\":0,\"content\":\"<p><font color=\\\"#c24f4a\\\">SỰ KIỆN HOT TRÊN YYLIVE</font><br/>🎗Đua top tổng nạp tháng<br/>🎗Thưởng đơn nạp đầu lên đến 50.888.000<br/>🎗Cược càng nhiều hoàn trả càng cao<br/>🎗Mưa lì xì mỗi ngày<br/>🎗Điểm danh mỗi ngày nhận quà liền tay<br/>🎗Hoàn vip tuần<br/>🎗Thắng liên tiếp xách ngay tiền thưởng<br/>🎗Hoàn trả thắng thua lên đến 80.000.000<br/>🎗Vòng quay may mắn càng quay càng trúng<br/>🎗Ngoài ra còn rất nhiều khuyến mãi hấp dẫn khác đang chờ đợi bạn!<br/>👉Tên miền địa chỉ nền tảng:<br/>&nbsp; &nbsp; &nbsp; yy.live<br/>&nbsp; &nbsp; &nbsp; yylive.com<br/></p>\",\"jumpUrl\":null}]}",
+            "body_size": 532,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "2ab68863-9390-434e-899f-3793ab3dd7a6",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://sw.fnccdn.com/511/api/plr/h5/v3/public/live/lrl.json?pageNum=1&pageSize=50&merchantId=511&area=VN&lang=VIT&t=1783489020",
+            "path": "/511/api/plr/h5/v3/public/live/lrl.json?pageNum=1&pageSize=50&merchantId=511&area=VN&lang=VIT&t=1783489020",
+            "headers": {
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "zstd"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"total\":46,\"current\":1,\"pages\":1,\"size\":50,\"records\":[{\"jumpType\":0,\"gameId\":\"180204113800032\",\"area\":\"VN\",\"gameType\":8,\"onlineCount\":32241,\"gameUrl\":\"\",\"liveName\":\"🦜SOI CẦU TÀI XỈU 🎲\",\"platformId\":\"0\",\"anchorId\":\"1787831695819378689\",\"bauble\":false,\"jumpUrl\":\"\",\"coverUrl\":\"https://img.y3cdn.com/anchor-photo/20260609/f5aa24b68c7b4de5aad3dc763a7eb132.jpg\",\"payType\":1,\"gameIconUrl\":\"https://sas.y3cdn.com/20240326/354ac1e15e8e4c36ace1b6da4ba7900a.png\",\"gameName\":\"1mFast3\",\"anchorNickname\":\"🦜SOI CẦU TÀI XỈU 🎲\",\"isH5Game\":false,\"showType\":0,\"id\":\"2074688696608235522\",\"showUiArea\":\"Việt Nam\"},{\"jumpType\":0,\"gameId\":\"180204113800045\",\"area\":\"VN\",\"gameType\":8,\"onlineCount\":31667,\"gameUrl\":\"\",\"liveName\":\"🐕HÚP_TỨ.🐝\",\"platformId\":\"0\",\"anchorId\":\"1872165888673222657\",\"bauble\":false,\"jumpUrl\":\"\",\"coverUrl\":\"https://img.y3cdn.com/20260504/db2e4c08550e4594b6387cf06a92dc4a.jpg\",\"payType\":1,\"gameIconUrl\":\"https://game.baccdn.com/images-sg/game/xocdia2.png\",\"gameName\":\"Xoc Dia\",\"anchorNickname\":\"🐕HÚP_TỨ.🐝\",\"isH5Game\":false,\"showType\":0,\"id\":\"2074628795117637634\",\"showUiArea\":\"Việt Nam\"},{\"jumpType\":0,\"gameId\":\"180204113800041\",\"area\":\"VN\",\"gameType\":8,\"onlineCount\":4766,\"gameUrl\":\"\",\"liveName\":\"8386 NHA\",\"platformId\":\"0\",\"anchorId\":\"1900493761044578305\",\"bauble\":false,\"jumpUrl\":\"\",\"coverUrl\":\"https://img.y3cdn.com/anchor-photo/20260513/499d01a572fd4315be9925f48fe5f893.jpg\",\"payType\":1,\"gameIconUrl\":\"https://game.baccdn.com/images-sg/game/1mwingo2.png\",\"gameName\":\"1m Wingo\",\"anchorNickname\":\"🦜SC1MWINGO\",\"isH5Game\":false,\"showType\":0,\"id\":\"2074718697863811073\",\"showUiArea\":\"Việt Nam\"},{\"jumpType\":0,\"gameId\":\"180204113800039\",\"area\":\"VN\",\"gameType\":8,\"onlineCount\":27706,\"gameUrl\":\"\",\"liveName\":\"🐕SCSicBo\",\"platformId\":\"0\",\"anchorId\":\"1598549452099416065\",\"bauble\":false,\"jumpUrl\":\"\",\"coverUrl\":\"https://img.y3cdn.com/anchor-photo/20260506/9cc66e63cd7442e193cf35579586a077.jpg\",\"payType\":1,\"gameIconUrl\":\"https://game.baccdn.com/images-sg/game/sicbo2.png\",\"gameName\":\"Sic Bo\",\"anchorNickname\":\"🐕SCSicBo\",\"isH5Game\":false,\"showType\":0,\"id\":\"2074630482755723265\",\"showUiArea\":\"Việt Nam\"},{\"jumpType\":0,\"gameId\":\"180204113800015\",\"area\":\"VN\",\"gameType\":8,\"onlineCount\":4600,\"gameUrl\":\"\",\"liveName\":\"🦜SC-1M5D\",\"platformId\":\"0\",\"anchorId\":\"1801235281629249538\",\"bauble\":false,\"jumpUrl\":\"\",\"coverUrl\":\"https://img.y3cdn.com/20260515/7ef332dfe2d344618a072fbd861061bc.jpg\",\"payType\":1,\"gameIconUrl\":\"https://game.baccdn.com/images-sg/game/1m5d2.png\",\"gameName\":\"1m5D\",\"anchorNickname\":\"🦜SC-1M5D\",\"isH5Game\":false,\"showType\":0,\"id\":\"2074718920439898114\",\"showUiArea\":\"Việt Nam\"},{\"jumpType\":0,\"gameId\":\"180204113800032\",\"area\":\"VN\",\"gameType\":8,\"onlineCount\":2737,\"gameUrl\":\"\",\"liveName\":\"LinkHayCuoi live ạ🦖\",\"platformId\":\"0\",\"anchorId\":\"2034362658249592834\",\"bauble\":false,\"jumpUrl\":\"\",\"coverUrl\":\"https://img.y3cdn.com/20260708/8171fbb8f1e549b5a027c817845470da.jpg\",\"payType\":1,\"gameIconUrl\":\"https://sas.y3cdn.com/20240326/354ac1e15e8e4c36ace1b6da4ba7900a.png\",\"gameName\":\"1mFast3\",\"anchorNickname\":\"[🐉] LinkHayCuoi🦖\",\"isH5Game\":false,\"showType\":0,\"id\":\"2074727027060645890\",\"showUiArea\":\"Việt Nam\"},{\"jumpType\":0,\"gameId\":\"180204113800032\",\"area\":\"VN\",\"gameType\":8,\"onlineCount\":115663,\"gameUrl\":\"\",\"liveName\":\"Idol mới 🥰\",\"platformId\":\"0\",\"anchorId\":\"1742159502648680450\",\"bauble\":false,\"jumpUrl\":\"\",\"coverUrl\":\"https://img.y3cdn.com/20240102/4bbb1fa1534e4298acac9c3594ab885b.jpg\",\"payType\":1,\"gameIconUrl\":\"https://sas.y3cdn.com/20240326/354ac1e15e8e4c36ace1b6da4ba7900a.png\",\"gameName\":\"1mFast3\",\"anchorNickname\":\"💙Munlove🍑\",\"isH5Game\":false,\"showType\":0,\"id\":\"2074661977029484546\",\"showUiArea\":\"Việt Nam\"},{\"jumpType\":0,\"gameId\":\"180204113800032\",\"area\":\"VN\",\"gameType\":8,\"onlineCount\":0,\"gameUrl\":\"\",\"liveName\":\"ido mới tinh\",\"platformId\":\"0\",\"anchorId\":\"2059818790044684290\",\"bauble\":false,\"jumpUrl\":\"\",\"coverUrl\":\"https://img.y3cdn.com/20260629/a164773b19af434486acec14af960f50.jpg\",\"payType\":2,\"gameIconUrl\":\"https://sas.y3cdn.com/20240326/354ac1e15e8e4c36ace1b6da4ba79",
+            "body_size": 3927,
+            "body_truncated": true,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "a293c1d9-8fdc-4571-9c88-474e4cae1ef1",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://cdn.k1cdn.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/80a697ecdece/0.7170113750191829:1783483520:rcAxr1M6XS4IHWXoFZbE06WTZiFlL8jGgOK4TLIqwWI/a17c99a15b84ddc7",
+            "path": "/cdn-cgi/challenge-platform/h/b/jsd/oneshot/80a697ecdece/0.7170113750191829:1783483520:rcAxr1M6XS4IHWXoFZbE06WTZiFlL8jGgOK4TLIqwWI/a17c99a15b84ddc7",
+            "headers": {
+                "content-length": "14704",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "text/plain;charset=UTF-8",
+                "accept": "*/*"
+            },
+            "body": "7pPNjb06+NMpiWcYi-eI7ByZFW+AaYA4JsgWAkUGED2+IZblF-5DOzsT$annf9K-o$FSF1JFONhB1wYM0p2oj8Uo5yjPOItQtoNLo-Zb3DtZe+ReNr$BG2WESMVnaixKyD2adlj8bWoKKWMn2GKf5EfUZdRx1rwjiqz3utj6yDuG3hD53AS$yy+p8cJedqmKirOmwqs1XpKnWKDqE1FmEXelfjgt31E2tW3DNZzab5nzFYULdhSK376Qw6wqiN8eqtO4XvnY$ZAQl0xEF7kf+z1NZMWu+oLSaDmfmM9EadF52OozFA3h1PyFgEsL49p6wAVSL8z9JhyTrnfy4xFStp4A+GgGY52N4xM8bPsv1oiF03pLjVZW7dZVIi3tLlkr65q0HuKXGhqygjZQJfzISQW0XB-zxeK+vygZJYEm4X0DXIVelFP-WI3YWeehWVf-EjYWzsnHe3aiqY9$m$STo6Rrh4GeZTu2chZkreMStkqe-0I9b0XLyt2XK7UyGfvnIWakMGdJlg9dpQ9dsuBWdcngMIPy0WS8+l-enND5lkQSIQmHI$hfXktzQiA5q3JUTL+84faVcTlW+Gy-un2TmTbXTPDgx0JiJOoYG5erWZh2Uzh-0Jky9AOYnOefZb61YGlpVQDxBK6hPHxgqYc0d7hsrovIHbAxrMN0jUoYYD8NJfzwxVni9HkQcDt-uAbqVDRzuaZlJzM$4Amrxx+nsocBKuDqVAAvoujYdpEEufrz78rcRgJGOq0v35nfwPVI5jN-KltTT5Ohqb8+TF-tLmPu70StTaxDbwxYgZ-2ba-AQu50Xepud-IH85aB3p6zTHGzg+IvLw8OzImbl1Lsh$QlGBwHqYnjr6dEcQ9WAvxh1fgjvJSfJwNoh2o3o0VLpJSel4fpsVS5XKslmQ2IPawkIA4kzrO-Ts+kOVqgFM6s5Pb-4IO421hAgcFbUKojnRoH+Paev0ZETHPXzd5psQK8$NBmuOj4GrdgBX$eZjPphQTj96muG5SDJb-zTe7izgzh$B93IiQbbGqwdHYQbIqDA0QVGPzqo8Mz40e5$WEtWlM6jzbixbOyMXugxz68Vr6ZSWuErbuTg2lBEv+6Vtb9p2YmPrmoPaZv22DpcsUISg4I9l0zJKiIua64nzTtLhPbb1Ot5BOm61fM42rS8uYkSPcjxpenJ8izlAD6lqeFu608dVR8O4k-EEUzU3uI5mFvcJd$5NkkUhmvmHSBXe4FblKLLjlU6jkIzKvD9p1ff7-sFks9yS7Hn9JDSLDTohS3kuMN6amsy7LKzs-fhm$2Ap-MHYMXwSI+BmpueHulgnIj70zohhDSQ2gcyaUq279VPH-A+680ikmUh9lp9UIYSOhbOIkNO$H2mzymMt7xiF1r7IT7NOhtasfAGXJj4fpsuInWXnxt8Oyo$4DBs8BjM8N7d1GKzfLGPMTawVntG1weUK+L85yOBt1vBo7+6-ia9lV$3WjSOL9HLjTVYEko76hi6t1a2cXIoib$Us8p51jvo$PxAxn-f0-dHjPH+pJ$Ys8pc2HI0bluOsOUs$XYwjufIEHU8GBHBA0f$h2GAwN5qcFsAyxW133j6zKKAg9mpKqRK7Q-1JgQysWP8OOSPJPVKXS$5Rbo0kYgA2GXY2TaJjhIBsoPS6Z$NrNw$R+LV$S$-zEDO20zSBW6Gp4c5u+hzuzahZ0DFDicTHMUgVxk4nXrj+ANRmpyIhPgBmmPDt$fB$89x$0Fdvrd1$PoGFOv-vzQooXaLGderih81V3aSlUg1+KAsE97aekdFdyiA-Yi$J24SnNMivG-rdewlDLgaNh12qYegVLoBnfcZoMrferXaY2mK-3I0gj8h-zTntnRGLxqHD9oGLwEnLIDY9YnRa7z6rpd863kZJ7vYh7f58sy02ynGeoes77eMzh830AZouDq2H16nf$dLddIYS74D3DN6uraQ5g7Fu20Ligqg27sZGa3eJv2YGmqGuZGpuXzLNEcIwMQhhjVa-Pn-TeNbWBqWLgqMHfQ7W68kw3lfVYD-7y7G3BiMavBiZ47wYHbiNrYNPPbtE-elYO3fQmGH2sihy5RUjSvkB3AOTS1l65oaZpnR1yKDgmQ-lwGrcnRAZuzaIiORSkBzr$oAGD0pGaG2Da3QFw2kxjh+BER56yyGufDov0xS6cvYfsbFGhOxYWNIQg5Kwms2b-Muh8cI$VesKIULskopkfXS3aAEKztELU06-$vALKBj7lAUqkgzJ2vU-cJJqMGJSl06SrXye0+c5LDNKqf+uPiFFVAq8odVVaQTQLzdZ3WU72KOs$TV7Z56Jzxyfyr$4mNpp36Xb-nE0MfmA0GB7z0PJ+EJyabnOEI6JANg5ococJ+VArMGjjzyPIL98tAW8dVxTmoi0vvmlaX$Y-GExG$AQRI10X6KmHscai1eBuNJaRaQLWTkSG2oOPFunm5Wq4gh9oeq$jIAeMzjwRO9WNkik3DGWf8Q0IihXoIQeBs7QBvUWTgvGYe4tArju$uRqhfopLPG-4jOR3bGjP4IOr9eiB-tUaLNlpaOjfk8qZnpRAslisbXeVfQXAbRxkWb3Pu2VuWF1JaT6SZi7bZHFP15zaj1-Eb7BEl4KbJSjQ+AvRfgYpnXq5XKPdhczO7gauhbIeUql2E5vv-ckPfqQWokW$+22oW3sHO9o$I4DKiwN7cQuwmGLFw$DJ4iBQihHls+zH0Uc0dtVfjZ8XWartetf7Xp78b4HDGFTh+V$cnFbMx4W0hRibT0HoyOPM6PnurGYh3hPsIi2pLKLMz77poaaMm37ickt$QR5SQ-DwWYJaxdruf27XyqW587RlogkhrrtBcZ$3nxADZxHnqFO45rYODZeZ7lqp1G1c-BKNXbdaKMiPnk5YmmpNxkszloqXHA6IALXeQedGrok9IB7gVaJRJ0G25UeMgr-ZXGIXBe+jSR8d-myQBt6nMvj9BgGFrzRtQXHMTS4vFNI791Vte9jySJtDWEK1mkcORWDb4LQbGMkxKZIXmJFRPmgzBWwSJVYvYV$ZnZXmSQUOtZLxM-SaTrAzz6y-h8YF9JyjsvD-YX+$nv3mu-tRexySm+TZbyK6$9oTg3m2RJ$8h7xeYnUTirOWjgBnD$k2DgRIp2JO6MGJYyrnXvxPjseNO4NgQN4HjU8zpUg+05J5lIskQs17rSKcz2obbLYYqN8jFbFkRYMWM2lK18uRr2erOTDPj6Gs9wBS8sUMtDKeevTR-QNE5xkp8Ojq92fBGHscy1w2o0B-nONg2bkAejEhiGWKU$izUkgAY8S9dhKiLPpvAd3ZWYypwvayxhIno-nufxh-87dT3UAVJfveBdc7075U8fESZW4g8D$UZkSQrWmdR-ZSLRvI2VanfDdPBzd-wZ7BbqEk-XkXxvehqLL$aiSPHY433jQULbty4wU+r4pi$fmrstb9Af-Ov1q4OXyBAhHcDIj+9ikN9poPOFkbZShvXpKoddby9pu4YMOAyhRudMwNjUw5lc6a$hIwRGNU218VJzbL66kMUlBaRsnA0UpcQUDxexfr3Xt9oT7O4ykLIQpRqY7bH6AGebr0NmXvD7b0wILyd7v8zfc+NH5HQuoe0uKcLpodqK9BDWAUERn8pw-SpGredmMvYZut6w3oOji$J0bhOET+GyOlhTwcYTGf00tn+HEcWh2Mm80oMK+xqgttilFiZtX+mvBR$-dbKGEA3BX$nqbBZsDzEFlcUP35tTSb3UrvbK-mH-lewPbUwbVbyi80zqH9bBoOLj7eyzmg7-6ZwSGIks$y2h+sm6G0n-3vzF-6plRYOZGqMwqSIFZYFRhX-vhmxEpVkQfeVBW63p515itBiYykV581x7ywlBg3$9vlxbUL4nK7QaEDuf011JTLxbNVkozTFuwihce7qiTN7EcoY2p0PFVyVVpycuYuGuNqf8JkfO9Rgn2ND6OyyWSw5Hz9JPb37K2oqzl1-ixSWcT0Bj7hLYTZ53b873UgbSUs-",
+            "body_size": 14704,
+            "body_truncated": true,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "text/plain; charset=UTF-8",
+                "content-length": "0"
+            },
+            "content_type": "text/plain; charset=UTF-8",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "931f34f2-8ac6-45bc-845a-e6542d9a5af5",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/hdcen/first-recharge/get",
+            "path": "/511/api/plr/hdcen/first-recharge/get",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "9017fd4c-e7e4-44dd-8afe-ec75a105e4e6",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://sw.fnccdn.com/511/api/plr/hdcen/first-recharge/get",
+            "path": "/511/api/plr/hdcen/first-recharge/get",
+            "headers": {
+                "content-length": "0",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "gzip"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"popUps\":true,\"activityList\":[{\"id\":120010,\"list\":[{\"condition\":\"150000\",\"award\":\"29000\",\"sort\":\"1\",\"awardType\":1,\"status\":1},{\"condition\":\"250000\",\"award\":\"44000\",\"sort\":\"2\",\"awardType\":1,\"status\":1},{\"condition\":\"500000\",\"award\":\"94000\",\"sort\":\"3\",\"awardType\":1,\"status\":1},{\"condition\":\"2500000\",\"award\":\"194000\",\"sort\":\"4\",\"awardType\":1,\"status\":1},{\"condition\":\"5000000\",\"award\":\"344000\",\"sort\":\"5\",\"awardType\":1,\"status\":1},{\"condition\":\"25000000\",\"award\":\"1944000\",\"sort\":\"6\",\"awardType\":1,\"status\":1},{\"condition\":\"50000000\",\"award\":\"4444000\",\"sort\":\"7\",\"awardType\":1,\"status\":1},{\"condition\":\"150000000\",\"award\":\"5444000\",\"sort\":\"8\",\"awardType\":1,\"status\":1},{\"condition\":\"250000000\",\"award\":\"10444000\",\"sort\":\"9\",\"awardType\":1,\"status\":1},{\"condition\":\"500000000\",\"award\":\"25444000\",\"sort\":\"10\",\"awardType\":1,\"status\":1}]}],\"url\":\"https://cdn.k1cdn.com/interactive/firstcharge/index.html#/\"}}",
+            "body_size": 266,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "7295c97f-8ef0-45cc-9bef-4616ea3087a6",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://71234.tv/sw.js",
+            "path": "/sw.js",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 304,
+            "reason": "",
+            "headers": {},
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "db832372-17a8-4da8-9379-710d571e07dd",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-LV9KEL696C&gtm=45je6761v9138091101za200zd9138091101&_p=1783489022702&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&cid=1441176437.1783487606&frm=0&ngs=1&pscdl=noapi&rcb=12&sr=480x854&uaa=&uab=&uafvl=Google%2520Chrome%3B119.0.6045.193%7CChromium%3B119.0.6045.193%7CNot%253FA_Brand%3B24.0.0.0&uam=A5010&uamb=1&uap=Android&uapv=7.1.2&uaw=0&ul=en-us&_s=2&tag_exp=115938466~115938469~118826210~119027224~119576881~119576885~119576891~119576895&sid=1783487605&sct=1&seg=1&dl=https%3A%2F%2F71234.tv%2Fhome&dt=YYLIVE&en=scroll&epn.percent_scrolled=90&_et=4&tfd=5606",
+            "path": "/g/collect?v=2&tid=G-LV9KEL696C&gtm=45je6761v9138091101za200zd9138091101&_p=1783489022702&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&cid=1441176437.1783487606&frm=0&ngs=1&pscdl=noapi&rcb=12&sr=480x854&uaa=&uab=&uafvl=Google%2520Chrome%3B119.0.6045.193%7CChromium%3B119.0.6045.193%7CNot%253FA_Brand%3B24.0.0.0&uam=A5010&uamb=1&uap=Android&uapv=7.1.2&uaw=0&ul=en-us&_s=2&tag_exp=115938466~115938469~118826210~119027224~119576881~119576885~119576891~119576895&sid=1783487605&sct=1&seg=1&dl=https%3A%2F%2F71234.tv%2Fhome&dt=YYLIVE&en=scroll&epn.percent_scrolled=90&_et=4&tfd=5606",
+            "headers": {
+                "content-length": "0",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "*/*"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 204,
+            "reason": "",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "0"
+            },
+            "content_type": "text/plain",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "810e8216-7c8c-4e9e-ab5c-0f936d8b0b5b",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/hdcen/h5/activity-template/getFirstRechargeGiftPackage",
+            "path": "/511/api/plr/hdcen/h5/activity-template/getFirstRechargeGiftPackage",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "888d958e-9169-4ca4-b0ce-9a371f124935",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://ht.fnccdn.com/xnntc/ip-detail/listener",
+            "path": "/xnntc/ip-detail/listener",
+            "headers": {
+                "content-length": "181",
+                "content-type": "application/json",
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "{\"pfi\":\"tCNIPapJFK9DE3WEB/CzZw==\",\"du\":\"HSTEXc278ZAp5nNWwuKMfWcO/Gx9jMEOUr8dXj+yQ2XmPx93Htgfr4/jUXbqb1NL\",\"pgi\":\"BFBmDom2ENuDigxUOQC6BA==\",\"sign\":\"2a475d7b107051092d7478b5aa4fc3e5\"}",
+            "body_size": 181,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-length": "1"
+            },
+            "content_type": "application/json",
+            "body": "0",
+            "body_size": 1,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "b4b974eb-4e50-4bb6-b1ce-6642a5b74485",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/financemo/h5/toy/v2/get/list.json?merchantId=511&t=1783489020",
+            "path": "/511/api/plr/financemo/h5/toy/v2/get/list.json?merchantId=511&t=1783489020",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "241c07f5-3b17-442c-ad79-5f86a3f81643",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/limit-promotion/get",
+            "path": "/511/api/plr/limit-promotion/get",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "6dcacbc0-4233-4a2d-bf86-85cd33f1629f",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/zbliv/h5/v3/public/live/room-info",
+            "path": "/511/api/plr/zbliv/h5/v3/public/live/room-info",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "a2bf3e96-a967-4141-8e6b-21046ec1fbc2",
+        "type": "http",
+        "request": {
+            "method": "OPTIONS",
+            "url": "https://sw.fnccdn.com/511/api/plr/financemo/vips/v2/h5/search.json?merchantId=511&t=1783489020",
+            "path": "/511/api/plr/financemo/vips/v2/h5/search.json?merchantId=511&t=1783489020",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-length": "0"
+            },
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "15305f05-1b85-44a8-b17f-7b37746e1c91",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://sw.fnccdn.com/511/api/plr/hdcen/h5/activity-template/getFirstRechargeGiftPackage",
+            "path": "/511/api/plr/hdcen/h5/activity-template/getFirstRechargeGiftPackage",
+            "headers": {
+                "content-length": "18",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "application/json",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "{\"currency\":\"VND\"}",
+            "body_size": 18,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-length": "32"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"status\":3}}",
+            "body_size": 32,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "0ded7e13-b234-4b5c-8bff-2eb4dd004266",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://sw.fnccdn.com/511/api/plr/financemo/h5/toy/v2/get/list.json?merchantId=511&t=1783489020",
+            "path": "/511/api/plr/financemo/h5/toy/v2/get/list.json?merchantId=511&t=1783489020",
+            "headers": {
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "zstd"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":[{\"baubleGrade\":1,\"toyName\":\"Lovense3\",\"toyPriceStr\":\"25000.000000\",\"toyPrice\":25000,\"id\":60001,\"baubleTime\":20},{\"baubleGrade\":0,\"toyName\":\"Lovense1\",\"toyPriceStr\":\"5000.000000\",\"toyPrice\":5000,\"id\":1,\"baubleTime\":5},{\"baubleGrade\":1,\"toyName\":\"Lovense2\",\"toyPriceStr\":\"20000.000000\",\"toyPrice\":20000,\"id\":30001,\"baubleTime\":10},{\"baubleGrade\":3,\"toyName\":\"Lovense8\",\"toyPriceStr\":\"500000.000000\",\"toyPrice\":500000,\"id\":60004,\"baubleTime\":60},{\"baubleGrade\":2,\"toyName\":\"Lovense4\",\"toyPriceStr\":\"150000.000000\",\"toyPrice\":150000,\"id\":60002,\"baubleTime\":30},{\"baubleGrade\":3,\"toyName\":\"Lovense5\",\"toyPriceStr\":\"250000.000000\",\"toyPrice\":250000,\"id\":30002,\"baubleTime\":30},{\"baubleGrade\":2,\"toyName\":\"Lovense6\",\"toyPriceStr\":\"50000.000000\",\"toyPrice\":50000,\"id\":2,\"baubleTime\":10},{\"baubleGrade\":3,\"toyName\":\"Lovense\",\"toyPriceStr\":\"150000.000000\",\"toyPrice\":150000,\"id\":60003,\"baubleTime\":15},{\"baubleGrade\":0,\"toyName\":\"Lovense10\",\"toyPriceStr\":\"7000.000000\",\"toyPrice\":7000,\"id\":3,\"baubleTime\":10},{\"baubleGrade\":3,\"toyName\":\"Lovense9\",\"toyPriceStr\":\"1250000.000000\",\"toyPrice\":1250000,\"id\":30003,\"baubleTime\":300}]}",
+            "body_size": 255,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "6a46393f-1e04-4ae3-b5e1-5e4d3567e8fb",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://sw.fnccdn.com/511/api/plr/financemo/vips/v2/h5/search.json?merchantId=511&t=1783489020",
+            "path": "/511/api/plr/financemo/vips/v2/h5/search.json?merchantId=511&t=1783489020",
+            "headers": {
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "zstd"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":[{\"liveInterval\":1000,\"vipName\":\"VIP 1\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:52:23\",\"id\":1,\"iconUrl\":\"https://sas.y3cdn.com/20260528/69dcc264d02b4234a764c396e612c625.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"50000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 2\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:52:28\",\"id\":2,\"iconUrl\":\"https://sas.y3cdn.com/20260528/7a3c9b8a17424b9fa2e54f4606906470.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"250000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 3\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:49:05\",\"id\":3,\"iconUrl\":\"https://sas.y3cdn.com/20260528/0a8f474d65bb4abf8d5acde4631d0eaf.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"500000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 4\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:52:36\",\"id\":4,\"iconUrl\":\"https://sas.y3cdn.com/20260528/dbfc711a437346f1925d4a91a4644188.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"1000000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 5\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:52:43\",\"id\":5,\"iconUrl\":\"https://sas.y3cdn.com/20260528/89630f7d67e94ba3b2e92d73bf9650fa.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"2500000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 6\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:52:49\",\"id\":6,\"iconUrl\":\"https://sas.y3cdn.com/20260528/65bd87f58207431aae9af388dc75ba2c.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"4000000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 7\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:52:56\",\"id\":7,\"iconUrl\":\"https://sas.y3cdn.com/20260528/37fa0c4a168d4451a5b2849a4184bd2e.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"6000000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 8\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:53:03\",\"id\":8,\"iconUrl\":\"https://sas.y3cdn.com/20260528/2524ac7111fc4bb1a02d1b84d34404a7.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"7500000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 9\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:53:09\",\"id\":9,\"iconUrl\":\"https://sas.y3cdn.com/20260528/03f7f783c58840818107296cece20e44.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"10000000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 10\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:53:15\",\"id\":10,\"iconUrl\":\"https://sas.y3cdn.com/20260528/930999cbd4cd44268b134b524f96e0b9.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"15000000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 11\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:53:21\",\"id\":11,\"iconUrl\":\"https://sas.y3cdn.com/20260528/f5742048101b4f588c7d6256e8a97270.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"25000000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 12\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:53:28\",\"id\":12,\"iconUrl\":\"https://sas.y3cdn.com/20260528/b34f4f48affd48548eb55212e93b17a5.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#000000\",\"upgradeValue\":\"40000000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 13\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:53:33\",\"id\":13,\"iconUrl\":\"https://sas.y3cdn.com/20260528/3bab105d5a284004bc41cc0aa669865b.png\",\"barrageColor\":\"#FFFFFF\",\"msgBgcolor\":\"#B86E0A\",\"upgradeValue\":\"50000000\",\"nicknameColor\":\"#FEF181\"},{\"liveInterval\":100,\"vipName\":\"VIP 14\",\"animationUrl\":\"\",\"createTime\":null,\"updateTime\":\"2026-05-28 12:53:39\",\"id\":14,\"ico",
+            "body_size": 1860,
+            "body_truncated": true,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "a88e7b42-ee1b-49ff-b9d5-4fbf38ede636",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://sw.fnccdn.com/511/api/plr/limit-promotion/get",
+            "path": "/511/api/plr/limit-promotion/get",
+            "headers": {
+                "content-length": "18",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "application/json",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "{\"currency\":\"VND\"}",
+            "body_size": 18,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "gzip"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"liveShow\":false,\"homeShow\":false,\"jumpUrl\":null}}",
+            "body_size": 78,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "219702f8-50f1-461f-8c4c-69dcd245bade",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://sw.fnccdn.com/511/api/plr/zbliv/h5/v3/public/live/room-info",
+            "path": "/511/api/plr/zbliv/h5/v3/public/live/room-info",
+            "headers": {
+                "content-length": "55",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "application/json",
+                "accept": "application/json, text/plain, */*"
+            },
+            "body": "{\"anchorId\":\"2034362658249592834\",\"isSupportH265\":true}",
+            "body_size": 55,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-encoding": "gzip"
+            },
+            "content_type": "application/json",
+            "body": "{\"code\":200,\"data\":{\"ln\":\"LinkHayCuoi live ạ🦖\",\"pullSign\":\"HD\",\"lid\":\"2074727027060645890\",\"tipSwc\":false,\"itrGu\":null,\"itrGbu\":null,\"itrGi\":null,\"pullAddr265\":null,\"tblCnts\":[\"Hát\",\"Nhảy\",\"Sự thật\",\"Thay quần áo\",\"Hôn bay\",\"Ngồi xổm 5 lần\"],\"focusOn\":false,\"wsu\":\"UX4BzJUrFsej+jgHFHYttXu3sTVKxHOcDn/2wAUMRJQ=\",\"atr\":\"VqL7LyXI2C8g5sh/lCBOnlLXJL5VSDBfiyKb54nlPxaiNfdBx45295zZGwZ05a+ngFuYuMtJbvGgOCDEnneVyw==\",\"isVct\":false,\"itrGmId\":null,\"pat\":1,\"atu\":null,\"pullSign265\":null,\"tblAmt\":null,\"cycleTime\":0,\"mt\":\"\",\"ahp\":\"https://img.y3cdn.com/anchor-photo/20260422/fd8665edd1764a179816448eb1a6f1db.jpg\",\"lvt\":\"B10011\",\"unlDefPa\":\"IFZp+mz+ySECwttcCg2NADk9gONbI3PoT2+u1UYZTzztYvuJPYhT30JhOq+D9kmcJ0gcMiUzXlIZoBAye5Rfjnz1p1dgkSb+IOpeBk36POZBUD/W8vHMDJQH7sS1L1NmS/CT2CIJU61AEZnqxcSIoHSllf+lglQux5XAkmqmxREiR/PU88Wm4ri3TZq0ImlVgnsKn7sHg8eEO0Ya+xiNzg==\",\"unlLowPa\":null,\"unlLowPa265\":null,\"cyNts\":\"🏪Qúy hội viên vui lòng không lưu tài khoản trên app cho lần chuyển tiền tiếp theo.Mọi vấn đề liên quan đến chuyển tiền không có trên hệ thống nền tảng không chịu trách nhiệm.\\n👉 Tên miền địa chỉ dễ nhớ của nền tảng: yylive.com, yy.live\",\"aid\":\"2034362658249592834\",\"card\":\"\",\"gid\":\"180204113800032\",\"itrGisu\":null,\"nt\":\"2026-07-08 12:37:12\",\"bauble\":false,\"pullAddr\":null,\"giu\":\"https://sas.y3cdn.com/20240326/354ac1e15e8e4c36ace1b6da4ba7900a.png\",\"oc\":2731,\"unlDefPa265\":null,\"irduc\":\"\",\"now\":\"1783489032486\",\"cfgInfo\":null,\"cvl\":1,\"lgt\":null,\"gat\":8,\"ann\":\"[🐉] LinkHayCuoi🦖\",\"isStTbl\":false,\"pct\":null,\"ppb\":\"0.000000\",\"gn\":\"TÀI XỈU\",\"lstp\":1,\"cu\":\"https://img.y3cdn.com/20260708/8171fbb8f1e549b5a027c817845470da.jpg\",\"isPk\":true,\"la\":\"\",\"plt\":1}}",
+            "body_size": 1188,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "201f93c1-ca29-4d3a-842f-3906b8199989",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://img.y3cdn.com/anchor-photo/20260626/fd23708d2dfc47e3a16dace2acdc5510.jpg",
+            "path": "/anchor-photo/20260626/fd23708d2dfc47e3a16dace2acdc5510.jpg",
+            "headers": {
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "image/webp",
+                "content-length": "23286"
+            },
+            "content_type": "image/webp",
+            "body": "",
+            "body_size": 23286,
+            "body_truncated": true,
+            "binary_preview_hex": "52494646ee5a00005745425056503820e25a0000f02c029d012af401f4013e49228e44a2a2219459b55c280484b3b68698b736b80de20c4693d4d98a888957bb9ba0b62f0cbff79e865f547443e8d6a7c2571dfdef407ebbeba52f783ff72f438b8df8e577acf357f2bf7b0f43fd31fde26a272dfd03f4ec8d301df78f113f4dc3dd42b5d98ee5ff4011d888c8a5a91bae012d290e62d37395a2eff5dfcb2fccdf25e9855f47d023004776661d122e44e0bccf28ff5e75107f02a691d8451a9f906f9865bc62964c48a82e02851ca9c25fc938ab80a324710cf5c8bdefea1dbba848bfe10d594b95a6070c50f0c63e098b29b14384a1a7a1ff259ef5be4c5592",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "6587e600-5b14-4e16-bf6a-53a5de8c545d",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://bcdn5.livcdn.com/live/511_2034362658249592834_e1e1f321b2ab7527895ae015ab2663bf.m3u8?txSecret=ace4bb8d53bd2037383b8070e07f0d9f&txTime=6A4DE226",
+            "path": "/live/511_2034362658249592834_e1e1f321b2ab7527895ae015ab2663bf.m3u8?txSecret=ace4bb8d53bd2037383b8070e07f0d9f&txTime=6A4DE226",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/vnd.apple.mpegurl",
+                "content-length": "455"
+            },
+            "content_type": "application/vnd.apple.mpegurl",
+            "body": "",
+            "body_size": 455,
+            "body_truncated": true,
+            "binary_preview_hex": "234558544d33550a234558542d582d56455253494f4e3a330a234558542d582d414c4c4f572d43414348453a4e4f0a234558542d582d4d454449412d53455155454e43453a313738333438383539340a234558542d582d5441524745544455524154494f4e3a340a23455854494e463a332e3931372c0a3531315f323033343336323635383234393539323833345f65316531663332316232616237353237383935616530313561623236363362662d313738333438383539342e74733f74787370697365713d3130353238373937303436323736363137303134340a23455854494e463a332e3931372c0a3531315f32303334333632363538323439353932",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "97069222-047b-47f9-af25-f84728f19be8",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://bcdn5.livcdn.com/live/511_2034362658249592834_e1e1f321b2ab7527895ae015ab2663bf-1783488594.ts?txspiseq=105287970462766170144",
+            "path": "/live/511_2034362658249592834_e1e1f321b2ab7527895ae015ab2663bf-1783488594.ts?txspiseq=105287970462766170144",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "video/MP2T",
+                "content-length": "1623380"
+            },
+            "content_type": "video/MP2T",
+            "body": "",
+            "body_size": 1623380,
+            "body_truncated": true,
+            "binary_preview_hex": "474000170000b00d0001c100000001f0002ab104b2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff475000170002b0170001c10000e100f0001be100f0000fe101f0002f44b99bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+            "response_mode": "video_preview"
+        }
+    },
+    {
+        "id": "f6f861cd-5527-411f-9c35-b3440158482e",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://bcdn5.livcdn.com/live/511_2034362658249592834_e1e1f321b2ab7527895ae015ab2663bf-1783488595.ts?txspiseq=105287970462766170144",
+            "path": "/live/511_2034362658249592834_e1e1f321b2ab7527895ae015ab2663bf-1783488595.ts?txspiseq=105287970462766170144",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "video/MP2T",
+                "content-length": "1623944"
+            },
+            "content_type": "video/MP2T",
+            "body": "",
+            "body_size": 1623944,
+            "body_truncated": true,
+            "binary_preview_hex": "474000140000b00d0001c100000001f0002ab104b2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff475000140002b0170001c10000e100f0001be100f0000fe101f0002f44b99bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+            "response_mode": "video_preview"
+        }
+    },
+    {
+        "id": "e94fc763-92f4-40d7-b36f-926456dc573f",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://bcdn5.livcdn.com/live/511_2034362658249592834_e1e1f321b2ab7527895ae015ab2663bf-1783488596.ts?txspiseq=105287970462766170144",
+            "path": "/live/511_2034362658249592834_e1e1f321b2ab7527895ae015ab2663bf-1783488596.ts?txspiseq=105287970462766170144",
+            "headers": {
+                "accept": "*/*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "video/MP2T",
+                "content-length": "1608152"
+            },
+            "content_type": "video/MP2T",
+            "body": "",
+            "body_size": 1608152,
+            "body_truncated": true,
+            "binary_preview_hex": "474000120000b00d0001c100000001f0002ab104b2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff475000120002b0170001c10000e100f0001be100f0000fe101f0002f44b99bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+            "response_mode": "video_preview"
+        }
+    },
+    {
+        "id": "479edb31-faaa-421b-a9a6-a100be94c6c6",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://ws.fnccdn.com/ws?c=p",
+            "path": "/ws?c=p",
+            "headers": {
+                "Host": "ws.fnccdn.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 101,
+            "reason": "Switching Protocols",
+            "headers": {},
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "88724377-fda3-44bb-ba69-e9d98efc5b02",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://ht.fnccdn.com/xnntc/ip-detail/listener",
+            "path": "/xnntc/ip-detail/listener",
+            "headers": {
+                "content-length": "181",
+                "content-type": "application/json",
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "{\"pfi\":\"tCNIPapJFK9DE3WEB/CzZw==\",\"du\":\"HSTEXc278ZAp5nNWwuKMfWcO/Gx9jMEOUr8dXj+yQ2XmPx93Htgfr4/jUXbqb1NL\",\"pgi\":\"akQHXCudlVOxwaDtlB2qaA==\",\"sign\":\"db657bd03fdb7b1167c211726ce79bca\"}",
+            "body_size": 181,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-length": "1"
+            },
+            "content_type": "application/json",
+            "body": "0",
+            "body_size": 1,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "bcf21d45-7908-4af1-829d-6e1adf09a1c6",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://71234.tv/cdn-cgi/rum?",
+            "path": "/cdn-cgi/rum?",
+            "headers": {
+                "content-length": "462",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "application/json",
+                "accept": "*/*"
+            },
+            "body": "{\"resources\":[],\"referrer\":\"https://71234.tv/home\",\"eventType\":1,\"firstPaint\":656.6999999999534,\"firstContentfulPaint\":656.6999999999534,\"startTime\":1783489022131.9,\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.6.0\",\"timings\":1},\"pageloadId\":\"cee39486-19bf-4919-9770-ace880c150a5\",\"location\":\"https://71234.tv/room/2034362658249592834\",\"nt\":\"reload\",\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"transferSize\":300},\"dt\":\"\",\"siteToken\":\"e167df96a70743bd9cafb452d0524b8d\",\"st\":2}",
+            "body_size": 462,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 204,
+            "reason": "",
+            "headers": {
+                "content-type": "text/plain"
+            },
+            "content_type": "text/plain",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "c1626950-98d2-4c93-a13e-3297e984bf04",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://ht.fnccdn.com/xnntc/ip-detail/listener",
+            "path": "/xnntc/ip-detail/listener",
+            "headers": {
+                "content-length": "181",
+                "content-type": "application/json",
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "{\"pfi\":\"tCNIPapJFK9DE3WEB/CzZw==\",\"du\":\"HSTEXc278ZAp5nNWwuKMfWcO/Gx9jMEOUr8dXj+yQ2XmPx93Htgfr4/jUXbqb1NL\",\"pgi\":\"RVUpnMB1Y2KU3iJIrHXk9g==\",\"sign\":\"08051f794779de4319b80dac38769147\"}",
+            "body_size": 181,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 200,
+            "reason": "",
+            "headers": {
+                "content-type": "application/json",
+                "content-length": "1"
+            },
+            "content_type": "application/json",
+            "body": "0",
+            "body_size": 1,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "714390b1-dde0-4406-a1d0-606c599c6b62",
+        "type": "http",
+        "request": {
+            "method": "POST",
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-LV9KEL696C&gtm=45je6761v9138091101za200zd9138091101&_p=1783489022702&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&cid=1441176437.1783487606&frm=0&ngs=1&pscdl=noapi&rcb=12&sr=480x854&uaa=&uab=&uafvl=Google%2520Chrome%3B119.0.6045.193%7CChromium%3B119.0.6045.193%7CNot%253FA_Brand%3B24.0.0.0&uam=A5010&uamb=1&uap=Android&uapv=7.1.2&uaw=0&ul=en-us&tag_exp=115938466~115938469~118826210~119027224~119576881~119576885~119576891~119576895&dl=https%3A%2F%2F71234.tv%2Froom%2F2034362658249592834%3FbgUrl%3Dhttps%3A%2F%2Fimg.y3cdn.com%2F20260708%2F8171fbb8f1e549b5a027c817845470da.jpg%26gameId%3D180204113800032%26gameName%3D1mFast3&dr=https%3A%2F%2F71234.tv%2Fhome&sid=1783487605&sct=1&seg=1&dt=YYLIVE&_s=3&tfd=15979",
+            "path": "/g/collect?v=2&tid=G-LV9KEL696C&gtm=45je6761v9138091101za200zd9138091101&_p=1783489022702&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&cid=1441176437.1783487606&frm=0&ngs=1&pscdl=noapi&rcb=12&sr=480x854&uaa=&uab=&uafvl=Google%2520Chrome%3B119.0.6045.193%7CChromium%3B119.0.6045.193%7CNot%253FA_Brand%3B24.0.0.0&uam=A5010&uamb=1&uap=Android&uapv=7.1.2&uaw=0&ul=en-us&tag_exp=115938466~115938469~118826210~119027224~119576881~119576885~119576891~119576895&dl=https%3A%2F%2F71234.tv%2Froom%2F2034362658249592834%3FbgUrl%3Dhttps%3A%2F%2Fimg.y3cdn.com%2F20260708%2F8171fbb8f1e549b5a027c817845470da.jpg%26gameId%3D180204113800032%26gameName%3D1mFast3&dr=https%3A%2F%2F71234.tv%2Fhome&sid=1783487605&sct=1&seg=1&dt=YYLIVE&_s=3&tfd=15979",
+            "headers": {
+                "content-length": "268",
+                "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+                "content-type": "text/plain;charset=UTF-8",
+                "accept": "*/*"
+            },
+            "body": "en=page_view&_et=5093\r\nen=page_view&_et=4004&dl=https%3A%2F%2F71234.tv%2Fhome&dr=https%3A%2F%2F71234.tv%2Froom%2F2034362658249592834%3FbgUrl%3Dhttps%3A%2F%2Fimg.y3cdn.com%2F20260708%2F8171fbb8f1e549b5a027c817845470da.jpg%26gameId%3D180204113800032%26gameName%3D1mFast3",
+            "body_size": 268,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 204,
+            "reason": "",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "0"
+            },
+            "content_type": "text/plain",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    },
+    {
+        "id": "8768d76c-d31a-457c-a184-a8eb7b4a68ec",
+        "type": "http",
+        "request": {
+            "method": "GET",
+            "url": "https://ws.fnccdn.com/ws?c=p",
+            "path": "/ws?c=p",
+            "headers": {
+                "Host": "ws.fnccdn.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": ""
+        },
+        "response": {
+            "status_code": 101,
+            "reason": "Switching Protocols",
+            "headers": {},
+            "content_type": "",
+            "body": "",
+            "body_size": 0,
+            "body_truncated": false,
+            "binary_preview_hex": "",
+            "response_mode": "normal"
+        }
+    }
+]

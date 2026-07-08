@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YYLIVE - Clone Stream Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        body { background-color: #121212; color: #fff; }
+        .idol-card { cursor: pointer; transition: 0.3s; background: #1e1e1e; border: none; }
+        .idol-card:hover { transform: scale(1.03); background: #2d2d2d; }
+        .video-container { background: #000; position: sticky; top: 20px; border-radius: 8px; overflow: hidden; }
+        video { width: 100%; max-height: 500px; display: block; }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid py-4">
+    <h2 class="mb-4 text-warning">YYLIVE Stream Player</h2>
+    
+    <div class="row">
+        <div class="col-md-7">
+            <h4 class="text-secondary mb-3">Danh sách phòng đang Live</h4>
+            <div id="idol-list" class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="text-center w-100 py-5">Đang tải danh sách Idol...</div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="video-container p-3 border border-secondary">
+                <h4 id="playing-title" class="text-warning text-truncate">Chọn một Idol để xem stream</h4>
+                <p id="playing-anchor" class="text-muted small"></p>
+                <video id="video" controls autoplay muted></video>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const video = document.getElementById('video');
+    let hls = null;
+
+    // 1. Tải danh sách Idol từ Backend Flask khi load trang
+    async function loadIdols() {
+        try {
+            const response = await fetch('/api/idols');
+            const result = await response.json();
+            
+            if (result.code === 200 && result.data.records) {
+                const idolList = document.getElementById('idol-list');
+                idolList.innerHTML = ''; // Xóa trạng thái loading
+                
+                result.data.records.forEach(idol => {
+                    const card = document.createElement('div');
+                    card.className = 'col';
+                    card.innerHTML = `
+                        <div class="card idol-card h-100 text-white" onclick="playStream('${idol.anchorId}', '${idol.anchorNickname}', '${idol.liveName}')">
+                            <img src="${idol.coverUrl}" class="card-img-top" style="height: 180px; object-fit: cover;" onerror="this.src='https://placehold.co/300x180?text=No+Image'">
+                            <div class="card-body p-2">
+                                <h6 class="card-title text-truncate mb-1">${idol.liveName || 'No Title'}</h6>
+                                <div class="d-flex justify-content-between align-items-center small">
+                                    <span class="text-warning fw-bold text-truncate" style="max-width: 120px;">👤 ${idol.anchorNickname}</span>
+                                    <span class="badge bg-danger">🔴 ${idol.onlineCount.toLocaleString()}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    idolList.appendChild(card);
+                });
+            }
+        } catch (error) {
+            console.error("Lỗi khi tải danh sách Idol:", error);
+        }
+    }
+
+    // 2. Hàm gọi API lấy link .m3u8 và tiến hành stream video
+    async function playStream(anchorId, nickname, liveName) {
+        document.getElementById('playing-title').innerText = liveName;
+        document.getElementById('playing-anchor').innerText = "Đang xem: " + nickname;
+
+        try {
+            const response = await fetch('/api/room-info', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ anchorId: anchorId })
+            });
+            const result = await response.json();
+
+            // Mẹo nhỏ: Trong file log, link stream .m3u8 nằm trong luồng dữ liệu hệ thống.
+            // Nếu API thật của room-info trả về trường chứa url (Ví dụ: data.pullAddr), bạn gán vào đây:
+            let streamUrl = result.data?.pullAddr;
+
+            // TRƯỜNG HỢP GIẢ LẬP/TEST: Nếu API thật bị chặn/hết hạn Token không sinh được link m3u8 động:
+            if (!streamUrl) {
+                // Link test m3u8 có sẵn từ traffic log của bạn (lưu ý link thực tế có thể hết hạn theo thời gian)
+                streamUrl = "https://bcdn5.livcdn.com/live/511_2034362658249592834_e1e1f321b2ab7527895ae015ab2663bf.m3u8?txSecret=ace4bb8d53bd2037383b8070e07f0d9f&txTime=6A4DE226";
+            }
+
+            // Tiến hành load luồng HLS vào thẻ Video
+            if (Hls.isSupported()) {
+                if (hls) hls.destroy(); // Hủy luồng cũ nếu có
+                hls = new Hls();
+                hls.loadSource(streamUrl);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                    video.play();
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                // Hỗ trợ riêng cho các trình duyệt Apple Safari
+                video.src = streamUrl;
+                video.addEventListener('loadedmetadata', function() {
+                    video.play();
+                });
+            }
+        } catch (error) {
+            alert("Không thể kết nối luồng Live của Idol này!");
+            console.error(error);
+        }
+    }
+
+    // Tự động kích hoạt tải danh sách khi vừa mở trang web
+    window.onload = loadIdols;
+</script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripchat Iframe Player</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.16/dist/hls.min.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            color: #c8d4e2;
+            font-family: "Segoe UI", sans-serif;
+        }
+        .wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000;
+        }
+        .status {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            text-align: center;
+            color: #8fd9ff;
+            width: 82%;
+            pointer-events: none;
+            line-height: 1.5;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+        }
+        .status.error {
+            color: #ff6b7f;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div id="status" class="status">Đang đồng bộ stream-info...</div>
+    <video id="player" controls autoplay muted playsinline></video>
+</div>
+<script>
+    const qs = new URLSearchParams(window.location.search);
+    const payload = {
+        username: qs.get('username') || '',
+        streamName: qs.get('streamName') || '',
+        streamId: qs.get('streamId') || '',
+        hlsPlaylist: qs.get('hlsPlaylist') || '',
+        id: qs.get('id') || null,
+    };
+
+    const statusEl = document.getElementById('status');
+    const videoEl = document.getElementById('player');
+
+    let hls = null;
+    let currentUrl = '';
+    let usingProxy = false;
+    let recoveryLock = false;
+    let refreshTimer = null;
+
+    function setStatus(text, isError = false) {
+        statusEl.textContent = text || '';
+        statusEl.className = isError ? 'status error' : 'status';
+        statusEl.style.display = text ? 'block' : 'none';
+    }
+
+    function uniquePush(arr, value) {
+        const v = (value || '').trim();
+        if (!v || arr.includes(v)) return;
+        arr.push(v);
+    }
+
+    function collectCandidates(info) {
+        const out = [];
+        uniquePush(out, info?.data?.roomConfig?.primary_stream || '');
+        uniquePush(out, info?.data?.roomConfig?.backup_stream_240p || '');
+        uniquePush(out, info?.data?.streamUrl || '');
+        (info?.data?.pkeyCandidates || []).forEach((u) => uniquePush(out, u));
+        (info?.data?.preferredCandidates || []).forEach((u) => uniquePush(out, u));
+        return out;
+    }
+
+    async function loadStreamInfo() {
+        const res = await fetch('/api/stripchat/stream-info', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+        });
+        return res.json();
+    }
+
+    async function probeViaProxy(url) {
+        if (!url) return false;
+        const probeUrl = `/api/stripchat/video_proxy?url=${encodeURIComponent(url)}`;
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 1600);
+        try {
+            const res = await fetch(probeUrl, {
+                method: 'GET',
+                headers: { Range: 'bytes=0-1' },
+                signal: controller.signal,
+            });
+            return res.status >= 200 && res.status < 400;
+        } catch (_) {
+            return false;
+        } finally {
+            clearTimeout(timer);
+        }
+    }
+
+    async function pickActive(urls) {
+        const maxTry = Math.min(urls.length, 6);
+        for (let i = 0; i < maxTry; i += 1) {
+            if (await probeViaProxy(urls[i])) {
+                return urls[i];
+            }
+        }
+        return urls[0] || '';
+    }
+
+    function destroyHls() {
+        if (hls) {
+            hls.destroy();
+            hls = null;
+        }
+    }
+
+    function getErrorStatus(data) {
+        const code = Number(data?.response?.code || data?.response?.status || data?.networkDetails?.status || 0);
+        if (Number.isFinite(code) && code > 0) return code;
+        const detail = String(data?.details || data?.reason || '').toLowerCase();
+        if (detail.includes('404')) return 404;
+        if (detail.includes('403')) return 403;
+        return 0;
+    }
+
+    async function playUrl(url, forceProxy) {
+        if (!url) {
+            setStatus('Không có URL stream hợp lệ.', true);
+            return false;
+        }
+
+        usingProxy = !!forceProxy;
+        currentUrl = url;
+        const source = usingProxy ? `/api/stripchat/video_proxy?url=${encodeURIComponent(url)}` : url;
+
+        destroyHls();
+        videoEl.removeAttribute('src');
+        videoEl.load();
+
+        if (videoEl.canPlayType('application/vnd.apple.mpegurl')) {
+            videoEl.src = source;
+            try {
+                await videoEl.play();
+                setStatus('');
+            } catch (_) {
+                setStatus('Bấm vào khung phát để bắt đầu.');
+            }
+            return true;
+        }
+
+        if (typeof Hls === 'undefined' || !Hls.isSupported()) {
+            setStatus('Trình duyệt không hỗ trợ HLS.', true);
+            return false;
+        }
+
+        hls = new Hls({
+            enableWorker: true,
+            lowLatencyMode: true,
+            backBufferLength: 30,
+            xhrSetup: function (xhr) {
+                xhr.withCredentials = false;
+            },
+        });
+
+        hls.on(Hls.Events.MANIFEST_PARSED, async () => {
+            try {
+                await videoEl.play();
+                setStatus('');
+            } catch (_) {
+                setStatus('Bấm vào khung phát để bắt đầu.');
+            }
+        });
+
+        hls.on(Hls.Events.ERROR, async (_, data) => {
+            if (!data || !data.fatal || recoveryLock) return;
+            recoveryLock = true;
+
+            const statusCode = getErrorStatus(data);
+            const shouldRefresh = statusCode === 403 || statusCode === 404 || data.type === Hls.ErrorTypes.NETWORK_ERROR;
+
+            try {
+                if (!usingProxy) {
+                    setStatus('Direct lỗi, chuyển sang proxy...');
+                    const switched = await playUrl(currentUrl, true);
+                    if (switched) return;
+                }
+
+                if (shouldRefresh) {
+                    setStatus('Luồng hết hạn, đang xin pkey mới...');
+                    await refreshFromBackend(true);
+                } else {
+                    setStatus('Lỗi phát luồng, đang thử làm mới...');
+                    await refreshFromBackend(true);
+                }
+            } finally {
+                recoveryLock = false;
+            }
+        });
+
+        hls.loadSource(source);
+        hls.attachMedia(videoEl);
+        return true;
+    }
+
+    async function refreshFromBackend(restart) {
+        try {
+            const info = await loadStreamInfo();
+            if (info?.code !== 0) {
+                setStatus(info?.msg || 'Không lấy được stream-info.', true);
+                return false;
+            }
+
+            const candidates = collectCandidates(info);
+            const active = await pickActive(candidates);
+            if (!active) {
+                setStatus('Không tìm thấy stream khả dụng.', true);
+                return false;
+            }
+
+            payload.hlsPlaylist = active;
+            if (!restart && active === currentUrl) {
+                return true;
+            }
+
+            setStatus('Đang nạp luồng mới...');
+            return await playUrl(active, false);
+        } catch (_) {
+            setStatus('Lỗi kết nối backend khi làm mới luồng.', true);
+            return false;
+        }
+    }
+
+    async function boot() {
+        setStatus('Đang lấy stream-info mới nhất...');
+        const ok = await refreshFromBackend(true);
+        if (!ok) return;
+
+        refreshTimer = setInterval(() => {
+            refreshFromBackend(false);
+        }, 15000);
+    }
+
+    window.addEventListener('beforeunload', () => {
+        if (refreshTimer) {
+            clearInterval(refreshTimer);
+            refreshTimer = null;
+        }
+        destroyHls();
+    });
+
+    boot();
+</script>
+</body>
+</html>

@@ -7,10 +7,44 @@
 
     <!-- Đổi sang CDN unpkg/jsdelivr có tốc độ tải luồng cực nhanh và ổn định -->
     <script src="https://cdn.jsdelivr.net/npm/mpegts.js@1.7.3/dist/mpegts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.16/dist/hls.min.js"></script>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', sans-serif; background-color: #0b0c10; color: #fff; padding: 20px; }
-        h1 { text-align: center; margin-bottom: 20px; color: #66fcf1; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { text-align: center; margin-bottom: 16px; color: #66fcf1; text-transform: uppercase; letter-spacing: 2px; }
+
+        .tabs {
+            max-width: 1200px;
+            margin: 0 auto 18px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            border: 1px solid #2d3947;
+            background: #121820;
+            color: #a9b6c7;
+            padding: 9px 14px;
+            border-radius: 999px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .tab-btn:hover {
+            color: #fff;
+            border-color: #4c6075;
+        }
+        .tab-btn.active {
+            color: #071116;
+            background: #66fcf1;
+            border-color: #66fcf1;
+            box-shadow: 0 4px 18px rgba(102, 252, 241, 0.25);
+            font-weight: 700;
+        }
+
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
         
         /* Danh sách Idol dạng Grid */
         .idol-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
@@ -33,7 +67,43 @@
         /* Trình phát livestream màn hình dọc */
         .player-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 1000; justify-content: center; align-items: center; }
         .player-container { width: 95%; max-width: 420px; background: #000; border-radius: 12px; overflow: hidden; position: relative; border: 1px solid #333; }
-        video { width: 100%; display: block; background: #000; aspect-ratio: 9/16; } 
+        .player-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            background: rgba(12, 16, 21, 0.98);
+            border-bottom: 1px solid #1c2430;
+        }
+        .player-avatar {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #111;
+            border: 1px solid #3a4a61;
+        }
+        .player-identity {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .player-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .player-platform {
+            font-size: 11px;
+            color: #8ea0b5;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+        }
+        video, .stripchat-iframe { width: 100%; display: block; background: #000; aspect-ratio: 9/16; border: 0; }
         .close-btn { position: absolute; top: 15px; right: 20px; font-size: 35px; color: #fff; cursor: pointer; z-index: 1001; text-shadow: 0 2px 4px #000; }
         .stream-loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #45f3ff; font-size: 14px; text-align: center; width: 85%; pointer-events: none; line-height: 1.6; }
 
@@ -44,31 +114,283 @@
 
     <h1>✨ Đang Livestream ✨</h1>
 
-    <div class="idol-grid" id="idols-container">
-        <p style="text-align: center; grid-column: 1/-1; color: #888;">Đang tự động đồng bộ danh sách Idol...</p>
+    <div class="tabs" id="platform-tabs">
+        <button class="tab-btn active" type="button" data-tab="mmlive" onclick="switchTab('mmlive')">MM Live</button>
+        <button class="tab-btn" type="button" data-tab="yylive" onclick="switchTab('yylive')">YY Live</button>
+        <button class="tab-btn" type="button" data-tab="stripchat" onclick="switchTab('stripchat')">Stripchat</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-mmlive">
+        <div class="idol-grid" id="idols-container">
+            <p style="text-align: center; grid-column: 1/-1; color: #888;">Đang tự động đồng bộ danh sách Idol...</p>
+        </div>
+    </div>
+
+    <div class="tab-panel" id="tab-yylive">
+        <div class="idol-grid" id="yylive-container">
+            <p style="text-align: center; grid-column: 1/-1; color: #888;">Bấm tab YY Live để tải danh sách phòng live...</p>
+        </div>
+    </div>
+
+    <div class="tab-panel" id="tab-stripchat">
+        <div class="idol-grid" id="stripchat-container">
+            <p style="text-align: center; grid-column: 1/-1; color: #888;">Bấm tab Stripchat để tải danh sách Idol...</p>
+        </div>
     </div>
 
     <div class="player-modal" id="player-modal">
         <span class="close-btn" onclick="closePlayer()">&times;</span>
         <div class="player-container">
+            <div class="player-meta">
+                <img id="player-avatar" class="player-avatar" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iODAiIHJ4PSI0MCIgZmlsbD0iIzE1MTkyMSIvPjx0ZXh0IHg9IjQwIiB5PSI0NiIgZmlsbD0iIzhhOTNiMiIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QVY8L3RleHQ+PC9zdmc+" alt="Avatar">
+                <div class="player-identity">
+                    <div id="player-name" class="player-name">Đang phát livestream</div>
+                    <div id="player-platform" class="player-platform">Live</div>
+                </div>
+            </div>
             <div class="stream-loading" id="stream-status">Đang nạp luồng phát...</div>
-            <video id="live-video" controls autoplay playsinline></video>
+            <video id="live-video" controls autoplay playsinline muted></video>
+            <iframe id="stripchat-iframe" class="stripchat-iframe" style="display:none;" allow="autoplay; fullscreen"></iframe>
         </div>
     </div>
 
     <script>
         let tgsPlayerInstance = null;
+        let yyHlsInstance = null;
+        let mmLiveLoaded = false;
+        let yyLiveLoaded = false;
+        let stripchatLoaded = false;
+        let stripchatRefreshTimer = null;
+        let stripchatSessionToken = 0;
+        const FALLBACK_CARD_AVATAR = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgMzAwIDQwMCI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMxNTE5MjEiLz48dGV4dCB4PSIxNTAiIHk9IjIwMCIgZmlsbD0iIzhhOTNiMiIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Tk8gSU1BR0U8L3RleHQ+PC9zdmc+';
+        const FALLBACK_PLAYER_AVATAR = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iODAiIHJ4PSI0MCIgZmlsbD0iIzE1MTkyMSIvPjx0ZXh0IHg9IjQwIiB5PSI0NiIgZmlsbD0iIzhhOTNiMiIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QVY8L3RleHQ+PC9zdmc+';
+
+        function clearStripchatRefreshState() {
+            if (stripchatRefreshTimer) {
+                clearInterval(stripchatRefreshTimer);
+                stripchatRefreshTimer = null;
+            }
+        }
+
+        function switchToNativeVideoPlayer() {
+            const videoElement = document.getElementById('live-video');
+            const iframeElement = document.getElementById('stripchat-iframe');
+            iframeElement.style.display = 'none';
+            iframeElement.src = 'about:blank';
+            videoElement.style.display = 'block';
+        }
+
+        function switchToStripchatIframePlayer(iframeUrl) {
+            const videoElement = document.getElementById('live-video');
+            const iframeElement = document.getElementById('stripchat-iframe');
+            videoElement.pause();
+            videoElement.removeAttribute('src');
+            videoElement.load();
+            videoElement.style.display = 'none';
+            iframeElement.style.display = 'block';
+            iframeElement.src = iframeUrl;
+        }
+
+        function setPlayerIdentity(name, platform, avatarUrl) {
+            const nameEl = document.getElementById('player-name');
+            const platformEl = document.getElementById('player-platform');
+            const avatarEl = document.getElementById('player-avatar');
+
+            nameEl.textContent = name || 'Đang phát livestream';
+            platformEl.textContent = platform || 'Live';
+            avatarEl.onerror = () => {
+                avatarEl.onerror = null;
+                avatarEl.src = FALLBACK_PLAYER_AVATAR;
+            };
+            avatarEl.src = avatarUrl || FALLBACK_PLAYER_AVATAR;
+        }
+
+        function tryAutoPlay(videoElement, statusText, hintText) {
+            const played = videoElement.play();
+            if (played && typeof played.then === 'function') {
+                played.then(() => {
+                    statusText.style.display = 'none';
+                }).catch(() => {
+                    statusText.innerText = hintText;
+                });
+            } else {
+                statusText.style.display = 'none';
+            }
+        }
+
+        async function resolveFinalStreamUrl(rawUrl) {
+            const source = (rawUrl || '').trim();
+            if (!/^https?:\/\//i.test(source)) {
+                return source;
+            }
+
+            const controller = new AbortController();
+            const timer = setTimeout(() => controller.abort(), 2500);
+
+            try {
+                const response = await fetch(source, {
+                    method: 'GET',
+                    mode: 'cors',
+                    redirect: 'follow',
+                    signal: controller.signal,
+                });
+                return response?.url || source;
+            } catch (_) {
+                return source;
+            } finally {
+                clearTimeout(timer);
+            }
+        }
+
+        function playHlsStream(proxyUrl, videoElement, statusText, sourceLabel, directUrl, forceProxy = false, hlsOverrides = {}) {
+            closeYyHlsEngine();
+            videoElement.muted = true;
+            const hlsSource = (!forceProxy && /^https?:\/\//i.test(directUrl || '')) ? directUrl : proxyUrl;
+
+            const nativeHls = videoElement.canPlayType('application/vnd.apple.mpegurl');
+            if (nativeHls) {
+                videoElement.src = hlsSource;
+                tryAutoPlay(videoElement, statusText, `Bấm vào khung phát để bắt đầu ${sourceLabel}.`);
+                return true;
+            }
+
+            if (typeof Hls !== 'undefined' && Hls.isSupported()) {
+                const hlsConfig = {
+                    enableWorker: true,
+                    lowLatencyMode: true,
+                    backBufferLength: 30
+                };
+                if (hlsOverrides && typeof hlsOverrides === 'object') {
+                    Object.assign(hlsConfig, hlsOverrides);
+                }
+                yyHlsInstance = new Hls(hlsConfig);
+
+                yyHlsInstance.loadSource(hlsSource);
+                yyHlsInstance.attachMedia(videoElement);
+
+                yyHlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+                    tryAutoPlay(videoElement, statusText, `Bấm vào khung phát để bắt đầu ${sourceLabel}.`);
+                });
+
+                yyHlsInstance.on(Hls.Events.ERROR, (_, data) => {
+                    if (data && data.fatal) {
+                        statusText.innerHTML = `<span style="color:#ff3366;">Lỗi phát HLS từ ${sourceLabel}. Đang thử khôi phục...</span>`;
+                        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+                            yyHlsInstance.startLoad();
+                        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+                            yyHlsInstance.recoverMediaError();
+                        } else {
+                            closeYyHlsEngine();
+                        }
+                    }
+                });
+
+                return true;
+            }
+
+            return false;
+        }
+
+        function collectM3u8Urls(payload, collector) {
+            if (!payload) return;
+
+            if (typeof payload === 'string') {
+                if (/^https?:\/\//i.test(payload) && /\.m3u8($|\?)/i.test(payload)) {
+                    collector.push(payload);
+                }
+                return;
+            }
+
+            if (Array.isArray(payload)) {
+                payload.forEach(item => collectM3u8Urls(item, collector));
+                return;
+            }
+
+            if (typeof payload === 'object') {
+                Object.values(payload).forEach(value => collectM3u8Urls(value, collector));
+            }
+        }
+
+        function getMmLiveHlsUrl(streamData) {
+            const candidates = [];
+            collectM3u8Urls(streamData, candidates);
+            return candidates.length ? candidates[0] : '';
+        }
+
+        function buildMmLiveHlsCandidates(streamData) {
+            const unique = new Set();
+            const addCandidate = (url) => {
+                if (!url || !/^https?:\/\//i.test(url) || !/\.m3u8($|\?)/i.test(url)) return;
+                unique.add(url);
+            };
+
+            const discovered = [];
+            collectM3u8Urls(streamData, discovered);
+            discovered.forEach(addCandidate);
+
+            const pullStreamUrl = streamData?.pullStreamUrl || '';
+            if (pullStreamUrl && /^rtmp:\/\//i.test(pullStreamUrl)) {
+                const httpBase = pullStreamUrl.replace(/^rtmp:\/\//i, 'http://');
+                const httpsBase = pullStreamUrl.replace(/^rtmp:\/\//i, 'https://');
+
+                const toM3u8 = (url) => {
+                    if (!url) return '';
+                    if (/\.m3u8($|\?)/i.test(url)) return url;
+                    if (/\.flv($|\?)/i.test(url)) return url.replace(/\.flv(?=\?|$)/i, '.m3u8');
+                    const qIndex = url.indexOf('?');
+                    if (qIndex >= 0) {
+                        return `${url.slice(0, qIndex)}.m3u8${url.slice(qIndex)}`;
+                    }
+                    return `${url}.m3u8`;
+                };
+
+                addCandidate(toM3u8(httpBase));
+                addCandidate(toM3u8(httpsBase));
+            }
+
+            return Array.from(unique);
+        }
+
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.tab === tabName);
+            });
+
+            document.querySelectorAll('.tab-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
+
+            const targetPanel = document.getElementById(`tab-${tabName}`);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+
+            if (tabName !== 'mmlive') {
+                closePlayer();
+            } else if (!mmLiveLoaded) {
+                fetchIdols();
+            }
+
+            if (tabName === 'yylive' && !yyLiveLoaded) {
+                fetchYyLiveRooms();
+            }
+
+            if (tabName === 'stripchat' && !stripchatLoaded) {
+                fetchStripchatIdols();
+            }
+        }
 
         async function fetchIdols() {
             const container = document.getElementById('idols-container');
             container.innerHTML = '<p style="text-align: center; grid-column: 1/-1;">Đang tải danh sách Idol từ hệ thống...</p>';
 
             try {
-                const response = await fetch('/api/idols', {
+                const response = await fetch('/api/mmlive/idols', {
                     method: 'GET'
                 });
                 const result = await response.json();
                 if (result.code === 0 && result.data) {
+                    mmLiveLoaded = true;
                     renderIdols(result.data);
                 } else {
                     container.innerHTML = `<p style="color: #ff3366; text-align: center; grid-column: 1/-1;">Lỗi lấy danh sách công khai: ${result.msg || 'Token cấu hình đã hết hạn'}</p>`;
@@ -86,13 +408,13 @@
                 let gameTagsHTML = idol.liveStartLottery ? idol.liveStartLottery.map(g => `<span class="game-tag">${g.lotteryName}</span>`).join('') : '';
                 const card = document.createElement('div');
                 card.className = 'idol-card';
-                card.onclick = () => playIdolStream(idol.anchorId, idol.liveId);
+                card.onclick = () => playIdolStream(idol);
 
                 card.innerHTML = `
                     <div class="avatar-container">
                         <span class="live-badge">Live</span>
                         <span class="views-badge">👁️ ${idol.rq || 0}</span>
-                        <img class="avatar-img" src="${idol.avatar}" alt="${idol.nickname}" onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'">
+                        <img class="avatar-img" src="${idol.avatar || ''}" alt="${idol.nickname}" onerror="this.onerror=null;this.src='${FALLBACK_CARD_AVATAR}'">
                     </div>
                     <div class="idol-info">
                         <div class="nickname">${idol.nickname}</div>
@@ -104,26 +426,234 @@
             });
         }
 
+        async function fetchYyLiveRooms() {
+            const container = document.getElementById('yylive-container');
+            container.innerHTML = '<p style="text-align: center; grid-column: 1/-1;">Đang tải danh sách phòng YY Live...</p>';
+
+            try {
+                const response = await fetch('/api/yylive/rooms?pageNum=1&pageSize=50', {
+                    method: 'GET'
+                });
+                const result = await response.json();
+
+                if (result.code === 200 && result.data && Array.isArray(result.data.records)) {
+                    yyLiveLoaded = true;
+                    renderYyLiveRooms(result.data.records);
+                } else {
+                    container.innerHTML = `<p style="color: #ff3366; text-align: center; grid-column: 1/-1;">YY Live trả dữ liệu lỗi: ${result.msg || 'Không có records hợp lệ'}</p>`;
+                }
+            } catch (error) {
+                container.innerHTML = '<p style="color: #ff3366; text-align: center; grid-column: 1/-1;">Lỗi kết nối API YY Live.</p>';
+            }
+        }
+
+        function renderYyLiveRooms(records) {
+            const container = document.getElementById('yylive-container');
+            container.innerHTML = '';
+
+            records.forEach(room => {
+                const card = document.createElement('div');
+                card.className = 'idol-card';
+                card.onclick = () => playYyLiveStream(room);
+
+                card.innerHTML = `
+                    <div class="avatar-container">
+                        <span class="live-badge">YY Live</span>
+                        <span class="views-badge">👁️ ${room.onlineCount || 0}</span>
+                        <img class="avatar-img" src="${room.coverUrl || ''}" alt="${room.anchorNickname || 'YY Live'}" onerror="this.onerror=null;this.src='${FALLBACK_CARD_AVATAR}'">
+                    </div>
+                    <div class="idol-info">
+                        <div class="nickname">${room.anchorNickname || room.liveName || 'Không rõ tên'}</div>
+                        <div class="signature">${room.liveName || room.gameName || 'Không có mô tả'}</div>
+                        <div class="game-tags">
+                            <span class="game-tag">${room.gameName || 'Unknown Game'}</span>
+                            <span class="game-tag">${room.showUiArea || room.area || 'VN'}</span>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        async function fetchStripchatIdols() {
+            const container = document.getElementById('stripchat-container');
+            container.innerHTML = '<p style="text-align: center; grid-column: 1/-1;">Đang tải danh sách Idol Stripchat...</p>';
+
+            try {
+                const response = await fetch('/api/stripchat/idols?primaryTag=girls&limit=24&topLimit=61&favoritesLimit=24', {
+                    method: 'GET'
+                });
+                const result = await response.json();
+
+                if (result.code === 0 && result.data && Array.isArray(result.data.records)) {
+                    stripchatLoaded = true;
+                    renderStripchatIdols(result.data.records);
+                } else {
+                    container.innerHTML = `<p style="color: #ff3366; text-align: center; grid-column: 1/-1;">Lỗi lấy dữ liệu Stripchat: ${result.msg || 'Không có records hợp lệ'}</p>`;
+                }
+            } catch (error) {
+                container.innerHTML = '<p style="color: #ff3366; text-align: center; grid-column: 1/-1;">Lỗi kết nối API Stripchat.</p>';
+            }
+        }
+
+        function renderStripchatIdols(records) {
+            const container = document.getElementById('stripchat-container');
+            container.innerHTML = '';
+
+            records.forEach(model => {
+                const card = document.createElement('div');
+                card.className = 'idol-card';
+                card.onclick = () => playStripchatStream(model);
+
+                const qualityTags = [];
+                if (Array.isArray(model.presets)) {
+                    model.presets.slice(0, 3).forEach(preset => qualityTags.push(`<span class="game-tag">${preset}</span>`));
+                }
+                if (model.isHd) qualityTags.push('<span class="game-tag">HD</span>');
+                if (model.isNew) qualityTags.push('<span class="game-tag">NEW</span>');
+                if (model.isLovense) qualityTags.push('<span class="game-tag">Lovense</span>');
+
+                card.innerHTML = `
+                    <div class="avatar-container">
+                        <span class="live-badge">SC Live</span>
+                        <span class="views-badge">👁️ ${model.viewersCount || 0}</span>
+                        <img class="avatar-img" src="${model.avatarUrl || model.previewUrlThumbSmall || ''}" alt="${model.username || 'Stripchat'}" onerror="this.onerror=null;this.src='${FALLBACK_CARD_AVATAR}'">
+                    </div>
+                    <div class="idol-info">
+                        <div class="nickname">${model.username || 'Unknown'}</div>
+                        <div class="signature">${model.country ? `Quốc gia: ${String(model.country).toUpperCase()}` : 'Không có quốc gia'}</div>
+                        <div class="game-tags">${qualityTags.join('')}</div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+
+            if (!records.length) {
+                container.innerHTML = '<p style="text-align: center; grid-column: 1/-1; color: #888;">Không có idol nào trong dữ liệu trả về.</p>';
+            }
+        }
+
+        async function playYyLiveStream(room) {
+            const modal = document.getElementById('player-modal');
+            const statusText = document.getElementById('stream-status');
+            const videoElement = document.getElementById('live-video');
+            const anchorId = room?.anchorId;
+            const liveId = room?.id;
+
+            switchToNativeVideoPlayer();
+
+            setPlayerIdentity(room?.anchorNickname || room?.liveName || 'YY Live', 'YY Live', room?.coverUrl || '');
+
+            modal.style.display = 'flex';
+            statusText.style.display = 'block';
+            statusText.innerText = 'Đang lấy thông tin phòng YY Live...';
+
+            try {
+                closePlayerEngine();
+                closeYyHlsEngine();
+                videoElement.removeAttribute('src');
+                videoElement.load();
+
+                const response = await fetch('/api/yylive/room-info', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ anchorId, liveId })
+                });
+
+                const result = await response.json();
+                if (result.code !== 200 || !result.data) {
+                    statusText.innerHTML = `<span style="color:#ff3366;">Không lấy được room-info YY Live: ${result.msg || 'Lỗi không rõ'}</span>`;
+                    return;
+                }
+
+                const candidateFromBackend = Array.isArray(result?.data?.streamCandidates) && result.data.streamCandidates.length
+                    ? result.data.streamCandidates[0]
+                    : '';
+                const directUrl = candidateFromBackend || result.data.streamUrl || result.data.pullAddr || result.data.pullAddr265 || '';
+                if (!directUrl || !/^https?:\/\//i.test(directUrl)) {
+                    const detail = result?.data?.streamError || result?.msg || 'Đã có room-info nhưng chưa tìm thấy URL stream hợp lệ.';
+                    statusText.innerHTML = `<span style="color:#ff3366;">${detail}</span>`;
+                    return;
+                }
+
+                const proxyUrl = `/api/yylive/video_proxy?url=${encodeURIComponent(directUrl)}`;
+                const isM3u8 = /\.m3u8($|\?)/i.test(directUrl);
+
+                if (isM3u8) {
+                    const started = playHlsStream(proxyUrl, videoElement, statusText, 'YY Live', directUrl);
+                    if (!started) {
+                        statusText.innerHTML = '<span style="color:#ff3366;">Thiết bị không hỗ trợ phát HLS.</span>';
+                    }
+                } else {
+                    videoElement.src = proxyUrl;
+                    tryAutoPlay(videoElement, statusText, 'Bấm vào khung phát để bắt đầu YY Live.');
+                }
+            } catch (error) {
+                statusText.innerHTML = '<span style="color:#ff3366;">Lỗi khi gọi room-info YY Live.</span>';
+                console.error(error);
+            }
+        }
+
+        function closeYyHlsEngine() {
+            if (yyHlsInstance) {
+                yyHlsInstance.destroy();
+                yyHlsInstance = null;
+            }
+        }
+
         // TỰ ĐỘNG KHỞI TẠO LUỒNG PHÁT VÀ ĐỔI ĐUÔI SANG .FLV ĐỘNG NGAY KHI CLICK
-        async function playIdolStream(anchorId, liveId) {
+        async function playIdolStream(idol) {
     const modal = document.getElementById('player-modal');
     const statusText = document.getElementById('stream-status');
     const videoElement = document.getElementById('live-video');
+    const anchorId = idol?.anchorId;
+    const liveId = idol?.liveId;
+    const roomType = idol?.showType ?? idol?.type ?? idol?.roomType ?? null;
+
+    switchToNativeVideoPlayer();
+
+    setPlayerIdentity(idol?.nickname || 'MM Live', 'MM Live', idol?.avatar || '');
     
     modal.style.display = 'flex';
     statusText.style.display = 'block';
     statusText.innerText = "Đang kết nối API để tạo token luồng stream mới nhất...";
 
     try {
-        const response = await fetch('/api/stream', {
+        closePlayerEngine();
+        closeYyHlsEngine();
+        videoElement.removeAttribute('src');
+        videoElement.load();
+
+        const response = await fetch('/api/mmlive/stream', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ anchorId, liveId })
+            body: JSON.stringify({ anchorId, liveId, roomType })
         });
         const result = await response.json();
         
-        if (result.code !== 0 || !result.data || !result.data.pullStreamUrl) {
-            statusText.innerHTML = `<span style="color:#ff3366;">Không thể lấy link luồng.<br>Lý do: Cụm X-Sign/Token cấu hình của bạn đã hết hạn.</span>`;
+        if (result.code !== 0 || !result.data) {
+            const reason = (result && (result.msg || result.message))
+                ? String(result.msg || result.message)
+                : 'Phòng live không trả về stream hợp lệ hoặc đã đóng.';
+            const isAuthExpired = Boolean(result && result.authExpired);
+            statusText.innerHTML = isAuthExpired
+                ? `<span style="color:#ff3366;">Không thể lấy link luồng.<br>Lý do: Token/Authorization MMLive đã hết hạn, cần cập nhật token mới.</span>`
+                : `<span style="color:#ff3366;">Không thể lấy link luồng.<br>Lý do: ${reason}</span>`;
+            return;
+        }
+
+        const hlsCandidates = buildMmLiveHlsCandidates(result.data);
+        if (hlsCandidates.length) {
+            const hlsDirectUrl = hlsCandidates[0];
+            const mmHlsProxyUrl = `/api/mmlive/video_proxy?url=${encodeURIComponent(hlsDirectUrl)}`;
+            const started = playHlsStream(mmHlsProxyUrl, videoElement, statusText, 'MM Live', hlsDirectUrl);
+            if (started) return;
+        }
+
+        if (!result.data.pullStreamUrl) {
+            statusText.innerHTML = `<span style="color:#ff3366;">Không tìm thấy URL stream phù hợp để phát trên thiết bị này.</span>`;
             return;
         }
 
@@ -135,7 +665,7 @@
         originalFlvUrl = originalFlvUrl.replace("?", ".flv?");
         
         // 2. CHUYỂN HƯỚNG: Đút link gốc vào cổng Proxy an toàn của Flask
-        let safeProxyUrl = `/api/video_proxy?url=${encodeURIComponent(originalFlvUrl)}`;
+        let safeProxyUrl = `/api/mmlive/video_proxy?url=${encodeURIComponent(originalFlvUrl)}`;
         
         console.log("Luồng video an toàn chạy qua mã hóa Render:", safeProxyUrl);
         statusText.innerText = "Đang tải dữ liệu luồng phát từ Server Proxy...";
@@ -146,8 +676,6 @@
         }
 
         if (mpegts.isSupported()) {
-            closePlayerEngine(); 
-            
             tgsPlayerInstance = mpegts.createPlayer({
                 type: 'flv',
                 isLive: true,
@@ -166,12 +694,12 @@
             });
 
             tgsPlayerInstance.play().then(() => {
-                statusText.style.display = 'none'; 
-            }).catch(err => {
+                statusText.style.display = 'none';
+            }).catch(() => {
                 statusText.innerText = "Bấm vào khung phát để kích hoạt âm thanh Livestream.";
             });
         } else {
-            statusText.innerText = "Trình duyệt này không hỗ trợ giải mã luồng phát FLV.";
+            statusText.innerHTML = "<span style='color:#ff3366;'>Thiết bị không hỗ trợ FLV. Hãy dùng luồng HLS trên MM Live hoặc mở bằng trình duyệt desktop Chrome/Edge.</span>";
         }
 
     } catch (error) {
@@ -179,6 +707,32 @@
         console.error(error);
     }
 }
+
+        async function playStripchatStream(model) {
+            const modal = document.getElementById('player-modal');
+            const statusText = document.getElementById('stream-status');
+            const payload = {
+                username: model?.username || '',
+                streamName: model?.streamName || '',
+                streamId: String(model?.id || model?.streamName || ''),
+                hlsPlaylist: model?.hlsPlaylist || '',
+                id: model?.id || '',
+            };
+
+            modal.style.display = 'flex';
+            statusText.style.display = 'block';
+            statusText.innerText = 'Đang mở player Stripchat (iframe nội bộ)...';
+
+            setPlayerIdentity(model?.username || 'Stripchat', 'Stripchat', model?.avatarUrl || model?.avatar || '');
+
+            closePlayerEngine();
+            closeYyHlsEngine();
+            clearStripchatRefreshState();
+            const params = new URLSearchParams(payload);
+            const iframeUrl = `/api/stripchat/iframe-player?${params.toString()}`;
+            switchToStripchatIframePlayer(iframeUrl);
+            statusText.style.display = 'none';
+        }
 
         function closePlayerEngine() {
     if (tgsPlayerInstance) {
@@ -191,13 +745,21 @@
 
         function closePlayer() {
             const videoElement = document.getElementById('live-video');
+            const iframeElement = document.getElementById('stripchat-iframe');
             videoElement.pause();
+            videoElement.removeAttribute('src');
+            videoElement.load();
+            iframeElement.src = 'about:blank';
+            iframeElement.style.display = 'none';
+            videoElement.style.display = 'block';
             closePlayerEngine();
+            closeYyHlsEngine();
+            clearStripchatRefreshState();
             document.getElementById('player-modal').style.display = 'none';
         }
 
         // Tự động tải danh sách ngay khi mở trang.
-        window.addEventListener('DOMContentLoaded', fetchIdols);
+        window.addEventListener('DOMContentLoaded', () => switchTab('mmlive'));
     </script>
 </body>
 </html>
